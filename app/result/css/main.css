@@ -1390,7 +1390,11 @@ button {
   width: 100%; }
 
 .card-info-row--product {
-  margin-top: 29px; }
+  margin-top: 29px;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+              -ms-grid-row-align: stretch;
+          align-items: stretch; }
 
 .card-slider {
   display: -webkit-flex;
@@ -1454,6 +1458,20 @@ button {
 .card-chars-table-item + .card-chars-table-item {
   margin-top: 37px; }
 
+.btn {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #E36F2C;
+  border-radius: 5px;
+  color: #FFF;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .card-chars-table {
   width: 100%; }
   .card-chars-table td {
@@ -1466,6 +1484,93 @@ button {
         padding-right: 5px; }
     .card-chars-table td:nth-child(2) {
       padding-left: 2px; }
+
+.card-price-block {
+  background: #FFFFFF;
+  width: 100%;
+  border: 1px solid #F2F2F2;
+  box-shadow: 2px 2px 7px rgba(202, 202, 202, 0.65);
+  border-radius: 5px;
+  height: 389px;
+  padding: 38px; }
+
+.card-price {
+  border: 1px solid #DBDBDB;
+  box-shadow: 2px 2px 7px rgba(202, 202, 202, 0.65);
+  border-radius: 5px;
+  text-align: center;
+  background: #F8F8F8;
+  margin-bottom: 37px; }
+  .card-price b {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    margin-bottom: 1px; }
+  .card-price span {
+    font-size: 12px;
+    text-align: center; }
+
+.card-price-top {
+  padding: 16px 16px 18px 16px; }
+
+.card-btn {
+  height: 70px;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.card-credit-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #29282D;
+  padding-bottom: 20px; }
+  .card-credit-item:hover {
+    text-decoration: none; }
+  .card-credit-item + .card-credit-item {
+    border-top: 1px solid #C4C0C0;
+    padding-top: 20px;
+    padding-bottom: 0; }
+
+.card-credit-arrow {
+  width: 40px;
+  height: 40px;
+  background: #fff url("../img/arrow-short.svg") no-repeat center;
+  border: 1px solid #3E8A74;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  margin-right: 15px;
+  box-shadow: 2px 2px 3px rgba(202, 202, 202, 0.65);
+  border-radius: 3px; }
+
+.card-credit-item-caption {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block; }
+
+.card-credit-item-count {
+  font-size: 14px;
+  display: block; }
+
+.card-credit-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 @media only screen and (max-width: 1199px) {
   .contain {
