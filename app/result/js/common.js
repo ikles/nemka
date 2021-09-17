@@ -19,11 +19,6 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-
-
-
-
-
   //$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
@@ -156,6 +151,28 @@ $('.accordion-header').toggleClass('inactive-header');
     $('.modal-overlay').fadeOut();
     $('body').removeClass('ohi');
   });
+
+
+
+
+$(window).scroll(function(){
+  var wt = $(window).scrollTop();  
+  var wh = $(window).height();  
+  /*var et = $('.card-tabs-row').offset().top;
+  var eh = $('.card-tabs-row').outerHeight();
+  var dh = $(document).height();   
+  if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+    console.log('Элемент показан');
+  }*/
+  if (wt > 600) {
+    $('.card-fixed').slideDown(100)
+  }
+  else {
+$('.card-fixed').slideUp(100)
+  }
+});
+
+
 
 
 
