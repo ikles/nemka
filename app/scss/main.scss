@@ -55,6 +55,16 @@ $ff2: Roboto, sans-serif;
 }
 
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local('Proxima Nova Extrabold'), local('Proxima-Nova-Extrabold'),
+  url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Extrabld.woff') format('woff'),
+  url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 
 a {
   text-decoration: none;
@@ -116,7 +126,7 @@ body {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  margin-right: 26px;
+  margin-right: 37px;
   cursor: pointer;
   flex: none;
   span {
@@ -131,9 +141,28 @@ body {
 
 
 .header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;  
+          align-items: flex-end;
+  justify-content: center;  
+  &:hover {
+    text-decoration: none;
+  }
+  svg {
+    max-width: 61px;
+    height: auto;
+  }
+  span {
+    color: #29282D;
+    font-weight: 800;
+    font-size: 9px;
+    margin-bottom: 2px;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova';
+    max-width: 130px;
+    line-height: 1.2;
+    margin-left: 12px;
+  }
 }
 
 .header-form {
@@ -145,7 +174,7 @@ body {
 input[type="text"].header-input-text {
   background: rgb(255, 255, 255);
   border: 1px solid rgb(227, 227, 227);
-  
+  font-size: 14px;
   border-radius: 3px;
   margin-bottom: 0px;
   width: 454px;
@@ -154,9 +183,7 @@ input[type="text"].header-input-text {
   padding: 0 20px;
 }
 
-.btn {
 
-}
 
 button {
   border: none;
@@ -173,9 +200,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 28px;
   background: rgb(51, 71, 82);
-  padding-right: 28px;  
+  padding-left: 28px;
+  padding-right: 32px;  
   transition: 0.5s;
   &:hover {
     background-color: #29282D;
@@ -230,8 +257,8 @@ button {
 
 .header-call {
   display: flex;
-  flex-direction: column;  
-  margin-left: auto;
+  flex-direction: column;            
+          margin-left: 89px;
 }
 .header-phone {
   font-weight: 600;
@@ -239,7 +266,7 @@ button {
   text-align: right;
   color: #334752;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .header-callback {
   font-size: 14px;
@@ -251,8 +278,9 @@ button {
   font-weight: 600;
 }
 .js-top-callback {}
-.header-socials {
-  margin-left: auto;
+.header-socials {  
+          
+      margin-left: auto;
   display: flex;  
   justify-content: flex-end;
 }
@@ -311,10 +339,12 @@ button {
 
 
 .card {
-  margin-top: 50px;
+  margin-top: 53px;
 }
 
-.card-main {}
+.card-main {
+  margin-top: 45px;
+}
 
 .card-title {
   font-weight: bold;
@@ -322,7 +352,7 @@ button {
   line-height: 118%;
   text-transform: uppercase;
   color: #29282D;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 .card-info-row {
   display: flex;    
@@ -344,7 +374,7 @@ button {
   width: 100%;
 }
 .card-info-col-2 {
-  max-width: 389px;
+  max-width: 368px;
   width: 100%;
 }
 .card-info-col-3 {
@@ -410,7 +440,7 @@ button {
     border-bottom: 1px solid #29282D;
   }  
   + .card-info-link {
-    margin-left: 26px;
+    margin-left: 24px;
   }
   i {
     display: inline-block;
@@ -465,14 +495,8 @@ button {
 }
 
 
-.card-info-col-2 {
-  max-width: 389px;
-  width: 100%;
-}
-.card-info-col-3 {
-  max-width: 376px;
-  width: 100%;
-}
+
+
 
 .card-info-row--product {
   margin-top: 29px;  
@@ -496,6 +520,9 @@ button {
   height: 85px;
   + .card-thumb {
     margin-top: 16px;
+  }
+  &.active {
+    border: 1px solid #E36F2C;
   }
 }
 .card-slide {
@@ -529,7 +556,7 @@ button {
   text-transform: uppercase;
   color: #29282D;
   line-height: 122%;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 
@@ -545,7 +572,12 @@ button {
   border-radius: 5px;
   color: #FFF;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+  transition: 0.5s;
+  &:hover {
+    text-decoration: none;
+    background-color: #D5611E;
+  }
 }
 
 .card-chars-table {  
@@ -620,6 +652,7 @@ button {
    border-top: 1px solid #C4C0C0;
    padding-top: 20px;
    padding-bottom: 0;
+   margin-top: 2px;
  }
 }
 .card-credit-arrow {
@@ -636,7 +669,7 @@ button {
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   display: block;
 }
 .card-credit-item-count {
@@ -659,7 +692,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  display: none;
+  display: none !important;
   z-index: 10;
 }
 .card-fixed-row-w {
@@ -819,7 +852,7 @@ button {
 
 .card-tabs-row {
   background: #F8F8F8;
-  margin-top: 59px;
+  margin-top: 51px;
 }
 
 .tabs-control {
@@ -828,12 +861,15 @@ button {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
+  padding-right: 242px;
+          justify-content: space-between;
   li {
+    margin-right: 0;
     a {
       font-size: 22px;
       color: #000000;
       display: inline-flex;
-      padding: 36px 0 26px 0;
+      padding: 39px 0 31px 0;
       border: none;
       &:hover {
         text-decoration: none;
@@ -846,12 +882,12 @@ button {
         font-weight: 700;
         text-transform: uppercase;
         position: relative;
-        padding-bottom: 18px;
+        padding-bottom: 24px;
         &:after {
           content: "";
           display: block;
           height: 3px;
-          width: calc(100% + 40px);
+          width: calc(100% + 87px);
           position: absolute;
           bottom: 0;
           left: 0;
@@ -860,7 +896,7 @@ button {
       }      
     }
     + li {
-      margin-left: 200px;
+      
     }
   } 
 }
@@ -876,10 +912,11 @@ button {
 
 
 
+.tabs_content {
+  margin-top: 33px;
+}
 
-
-.ab {
-  margin-top: 41px;
+.ab {  
   margin-bottom: 54px;
 }
 
@@ -890,7 +927,7 @@ button {
   box-shadow: rgba(202, 202, 202, 0.65) 2px 2px 7px;
   border-radius: 5px;
   margin: 0px;
-  padding: 34px 50px 34px 50px;
+  padding: 34px 40px 27px 50px;
 }
 
 .ab-w-2 {
@@ -928,16 +965,17 @@ button {
 .ab-d {
   border-top: 1px solid rgb(214, 214, 214);
   display: flex;
+  width: 100%;
 }
 
 .ab-d-col-1 {
-  width: 50%;
+  width: 42.2%;
   border-right: 1px solid #D6D6D6;
-  padding-top: 30px;
+  padding-top: 26px;
 }
 
 .ab-d-col-2 {
-  width: 50%;
+  width: 58.8%;          
   padding-left: 30px;
   padding-top: 30px;
 }
@@ -954,12 +992,13 @@ button {
 }
 
 .ab-d-inf-ul {
+  padding-left: 9px;
   li {
     font-size: 16px;
     line-height: 1.6;
     color: rgb(41, 40, 45);
-    margin-bottom: 8px;  
-    padding-left: 12px;
+    margin-bottom: 1px;  
+    padding-left: 14px;
     position: relative;
     &:before {
       content: "";
@@ -985,8 +1024,7 @@ button {
   background-size: cover;
   height: 850px;
   display: flex;          
-  justify-content: center;          
-  margin-top: 54px;
+  justify-content: center;            
   align-items: center;
 }
 
@@ -1017,7 +1055,7 @@ button {
 
 
 .try {
-  padding-top: 61px;
+  padding-top: 65px;
   padding-bottom: 42px;
   position: relative;
   &:after {
@@ -1054,7 +1092,7 @@ button {
   box-shadow: rgba(202, 202, 202, 0.65) 2px 2px 7px;
   border-radius: 5px;
   padding: 44px 42px 40px 71px;
-  margin-top: 34px;
+  margin-top: 41px;
   position: relative;
   &:before {
     z-index: -1;
@@ -1075,7 +1113,7 @@ button {
   font-size: 22px;
   line-height: 1.5;
   color: rgb(41, 40, 45);
-  margin-bottom: 21px;
+  margin-bottom: 44px;
 }
 
 .try-txt-span {
@@ -1117,6 +1155,7 @@ input[type="text"].try-input-tel {
 
 input[type="text"].try-input-date {
   background: url("../img/calendar-form.svg") right 29px center no-repeat rgb(255, 255, 255);  
+  position: relative;
 }
 
 .try-btn {
@@ -1145,12 +1184,18 @@ input[type="text"].try-input-date {
 
 .adv-row {
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 51px;
 }
 
 .adv-col-1 {
-  width: 50%;
+  width: 40.6%;
   position: relative;
+}
+
+.adv-col-2 {
+  width: 59.4%;
+  position: relative;
+  z-index: 2;
 }
 
 .adv-col-1-it-1 {
@@ -1162,8 +1207,8 @@ input[type="text"].try-input-date {
 .adv-col-1-it {  
   background-repeat: no-repeat;
   background-position: left top;
-  padding-right: 82px;
-  padding-top: 77px;
+  padding-right: 70px;
+  padding-top: 70px;
   display: flex;
   justify-content: flex-end;  
   background-size: cover;
@@ -1176,14 +1221,12 @@ input[type="text"].try-input-date {
   font-size: 42px;
   text-transform: uppercase;
   color: rgb(41, 40, 45);
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
+  line-height: 1.2;
 }
 
-.adv-col-2 {
-  width: 50%;
-  position: relative;
-  z-index: 2;
-}
+
 
 .adv-col-2-it {
   background: rgb(255, 255, 255);
@@ -1209,6 +1252,9 @@ input[type="text"].try-input-date {
 }
 
 .adv-col-2-it-txt-w {
+  max-width: 729px;
+  width: 100%;
+  
 }
 
 .adv-col-2-it-txt-1 {
@@ -1222,7 +1268,7 @@ input[type="text"].try-input-date {
 .adv-col-2-it-txt-w p {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .pos-sid {
@@ -1240,12 +1286,18 @@ input[type="text"].try-input-date {
   text-align: center;
   text-transform: uppercase;
   color: #29282D;
+  display: block;
+  width: 100%;
 }
 
 .pos-sid-it-w {
-  margin-top: 64px;
+  margin-top: 56px;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 1644px;
+  margin-left: auto;
+  margin-right: auto;
+          justify-content: center;
 }
 
 .pos-sid-col {
@@ -1368,17 +1420,7 @@ input[type="text"].try-input-date {
 }
 
 
-.call-back-w {
-  background-image: url("../img/call-back-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;  
-  background-size: cover;
-  padding: 38px 71px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #DBDBDB;  
-  border-radius: 5px;
-}
+
 
 .call-back-txt {
   font-weight: bold;  
@@ -1395,21 +1437,38 @@ input[type="text"].try-input-date {
 .call-back-form {
   flex: none;
   width: 447px;
+  
+  z-index: 2;
+}
+
+.call-back-w {
+  background-image: url("../img/call-back-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;  
+  background-size: cover;
+  padding: 38px 71px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #DBDBDB;  
+  border-radius: 5px;
   position: relative;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -307px;
-    top: 50%;    
-    transform: translate(-50%, -50%);
-    background: url("../img/phone-form-bg.png") $nr center;
-    width: 1018px;
-    height: 678px;
-    -webkit-background-size: 1018px;
-    -o-background-size: 1018px;
-    background-size: 1018px;
-  }
+}
+
+.call-back-form-after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -200px;
+  top: 50%;    
+  transform: translate(-50%, -50%);
+  background: url("../img/phone-form-bg.png") $nr center;
+  width: 1018px;
+  height: 678px;
+  -webkit-background-size: 1018px;
+  -o-background-size: 1018px;
+  background-size: 1018px;
+  z-index: 0;
+  
 }
 
 
@@ -1459,7 +1518,7 @@ h2 {
       z-index: 1;      
       position: absolute;
       right: -140px;
-      bottom: -109px;
+      bottom: -110px;
       width: 545px;
       height: 576px;
       background: url("../img/man.png");
@@ -1638,13 +1697,315 @@ h2 {
 
 
 
+.reviews {
+  padding-bottom: 102px;
+  padding-top: 90px;
+}
+
+
+.reviews-row {
+  display: flex;
+}
+
+.reviews-l {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.reviews-item {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+  box-sizing: border-box;
+  box-shadow: rgba(202, 202, 202, 0.4) 2px 2px 7px;
+  border-radius: 5px;
+  padding: 31px 50px 41px 71px;
+  margin-bottom: 20px;
+}
+
+.reviews-item-row-1 {
+  width: 100%;
+  display: flex;  
+  justify-content: flex-start;
+}
+
+.reviews-img-w {
+  width: 101px;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 31px;
+  flex: 0 0 auto;
+}
+
+.reviews-name-date {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.reviews-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(41, 40, 45);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.reviews-date {
+  font-size: 16px;
+  color: #29282D;
+}
+
+.reviews-item-stars {  
+  flex: none;
+  align-items: flex-start;
+  .star, .star-0 {
+    width: 25px;
+    height: 25px;    
+    background-size: 25px;
+    margin: 0 2px;
+  }
+}
+
+.reviews-table {
+  margin-top: 30px;
+}
+
+.reviews-table-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.reviews-table-col-1 {  
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgb(41, 40, 45);
+  padding-right: 15px;
+  max-width: 160px;
+  width: 100%;
+  flex: none;
+}
+
+.reviews-table-col-2 {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgb(41, 40, 45);  
+  flex-grow: 1;
+}
+
+.more-revs {
+  display: inline-flex;
+  align-items: center;
+  color: rgb(227, 111, 44);
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  min-height: 35px;
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    content: "";
+    display: block;
+    border: 1px solid #E36F2C;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 3px rgba(202, 202, 202, 0.65);
+    border-radius: 3px;
+    background: url("../img/arr-or.svg") $nr center;
+    margin-left: 16px;
+  }
+}
+
+.reviews-r {
+  width: 407px;
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+.rrating {
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 7px rgba(202, 202, 202, 0.4);
+  border-radius: 5px;
+  padding: 37px 48px 29px 48px;
+
+}
+
+.rrating-tit {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.rrating-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #1A2026;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.rrating-mark {
+  font-weight: 600;
+  font-size: 22px;
+  color: rgb(62, 138, 116);
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.rrating-stars {
+}
+
+.rrating-txt {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.rrating-tbl {
+}
+
+.rrating-tbl-row {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.rrating-col-l {
+  width: 50%;
+}
+
+.rrating-col-r {
+  width: 50%;
+  left: 14px;
+}
 
 
 
+.rrating-btn {
+  margin-top: 25px;
+  height: 50px;
+  padding-left: 35px;
+  padding-right: 35px;  
+  text-transform: uppercase;
+
+}
 
 
 
+.star-green {
+  background-image: url('../img/star-green.svg');
+}
 
+
+.ui-datepicker {
+  z-index: 5 !important;
+}
+
+.ui-widget-content .ui-state-default {
+  background-color: #FFF;
+}
+
+.ui-widget-content .ui-state-default {
+  font-weight: 700;
+  &.ui-state-active {
+    color: #ccc;
+  }
+}
+
+.ui-datepicker .ui-datepicker-header {
+  background-color: #FFF;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  top: 0;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  display: flex;
+-webkit-justify-content: center;
+          justify-content: center;  
+          align-items: center;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-family: 'Golos', sans-serif;
+}
+
+.ui-corner-all {
+  border: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;  
+  box-shadow: none !important ;  
+  
+  .ui-icon {
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;  
+    box-shadow: none !important ;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/cal-arr.png');
+    position: static !important;    
+    justify-content: center;
+    display: flex;    
+    align-items: center;
+    &:hover {
+      
+    
+    }
+  }
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  display: flex;  
+          align-items: center;
+          justify-content: center;
+}
+
+.ui-widget.ui-widget-content {
+  box-shadow: 0px 0px 4px rgba(183, 183, 183, 0.25), 0px 0px 10px rgba(100, 100, 100, 0.25) !important;
+  border-radius: 5px;  
+  padding: 18px 27px !important;  
+  font-weight: 400;
+  font-family: 'Golos', sans-serif;
+}
+
+.ui-datepicker th {
+  font-weight: 400;
+  color: #000;
+  font-size: 10px;
+}
+
+.ui-widget-content .ui-state-default {
+color: #8A8A8A;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+
+.ui-state-hover .ui-icon {  
+  background-image: url('../img/cal-arr.png');
+  background-position: center;
+}
+
+.ui-datepicker-next {
+  .ui-icon {
+    transform: rotate(180deg);
+  }
+}
 
 
 @import "_media.scss";

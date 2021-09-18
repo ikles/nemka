@@ -456,6 +456,11 @@ $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 1
 $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 140px; top: 170px; margin-right: 0; width: 84px;" class="butospan copy-html">copy htm</span>');
 */
 
+
+
+
+
+
 $('.stroove').click(function() {
   $('*').removeAttr('style');
   $('*').removeAttr('id');  

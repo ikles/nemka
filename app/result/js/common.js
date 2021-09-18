@@ -22,9 +22,34 @@ jQuery(document).ready(function( $ ) {
   //$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
-  $('.eye-3').click(function (e) {
+/************************************/
+
+$('.wrapper').prepend('<span class="eye-3"></span>');
+let pg = parseInt(document.location.pathname.match(/\d+/))
+$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
+$('body:not(.active)').css('background-image', "unset");
+
+$('.eye-3').click(function (e) {
+  e.preventDefault();  
+  $('body').toggleClass('active');
+  let pg = parseInt(document.location.pathname.match(/\d+/));
+  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
+  $('body:not(.active)').css('background-image', "unset");
+
+});
+
+/************************************/
+
+
+  $('.card-thumb').click(function (e) {
+    $('.card-thumb').removeClass('active');
+    const href = $(this).attr('href');
     e.preventDefault();
-    $('body').toggleClass('active');
+    $('.card-slide-image').attr('src', '');
+    setTimeout(function () {
+      $('.card-slide-image').attr('src', href);
+    }, 100);
+    $(this).addClass('active')
   });
 
 
@@ -155,9 +180,9 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
 
-$(window).scroll(function(){
-  var wt = $(window).scrollTop();  
-  var wh = $(window).height();  
+  $(window).scroll(function(){
+    var wt = $(window).scrollTop();  
+    var wh = $(window).height();  
   /*var et = $('.card-tabs-row').offset().top;
   var eh = $('.card-tabs-row').outerHeight();
   var dh = $(document).height();   
@@ -168,12 +193,38 @@ $(window).scroll(function(){
     $('.card-fixed').slideDown(100)
   }
   else {
-$('.card-fixed').slideUp(100)
+    $('.card-fixed').slideUp(100)
   }
 });
 
 
 
+if($('.try-input-date').length) {
+  $('.try-input-date').datepicker({
+    dateFormat: 'dd.mm.yy',
+    firstDay : 1,
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+  });
+}
+
+
+
+  $('[data-fancybox="gallery-1"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
 
 
 //  $('select').fancySelect();

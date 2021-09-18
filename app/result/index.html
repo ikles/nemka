@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>        
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +28,12 @@
             <span></span>
             <span></span>
           </div>
-          <a href="#" class="header-logo"><img src="img/logo.png" /></a>
+          <a href="index.html" class="header-logo">
+            <svg version="1.1" id="Слой_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="109px" height="75px" viewBox="0 0 109 75" enable-background="new 0 0 109 75" xml:space="preserve"> 
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#1A171B" d="M0,62.552V37.13h5.138v10.002h10.055V37.13h5.132v25.421h-5.132 V51.437H5.138v11.115H0L0,62.552z M38.525,21.315L57.121,2.171l1.642-1.688l1.789,1.541l41.795,36.007l4.053,3.812l-7.326-0.029 L59.068,7.349L45.501,21.315H38.525L38.525,21.315z M58.514,35.812L58.514,35.812l8.204-0.01c-0.375-1.615-2.044-3.734-4.032-5.489 c-2.992-2.273-6.416-3.809-10-4.553c-3.578-0.742-7.319-0.695-10.957,0.197c-6.674,1.638-12.054,5.826-15.355,11.273 c-3.3,5.445-4.525,12.144-2.891,18.804c1.637,6.675,5.825,12.054,11.272,15.354c5.445,3.301,12.145,4.524,18.805,2.892 c2.365-0.58,4.598-1.483,6.633-2.672c2.041-1.192,3.924-2.688,5.58-4.452l1.467-1.58c-3.105,0.096-7.128,0.072-10.542,0.046 c-1.504,0.878-3.107,1.534-4.764,1.939c-4.827,1.185-9.673,0.305-13.603-2.077c-3.929-2.381-6.949-6.262-8.13-11.075 c-1.185-4.827-0.303-9.674,2.078-13.604c2.381-3.929,6.261-6.949,11.075-8.131c2.639-0.647,5.354-0.681,7.95-0.143 C53.891,33.069,56.358,34.175,58.514,35.812L58.514,35.812z M45.467,44.138L45.467,44.138h6.037L56.08,56.97l4.611-12.832h6.019 v18.414h-4.143V50.429l-4.493,12.123h-4.161l-4.285-12.123v12.123h-4.161V44.138L45.467,44.138z M71.008,37.13v25.421h5.132V51.418 c0.869,0.012,1.515,0.172,1.935,0.485s0.965,1.096,1.621,2.345c0.368,0.704,0.587,1.101,0.64,1.196 c0.153,0.265,0.248,0.443,0.296,0.536l3.036,6.571h6.031l-3.469-6.973c-0.887-1.787-1.704-3.178-2.45-4.161 c-0.746-0.982-1.693-1.633-2.835-1.959c0.923-0.521,1.568-1.077,1.936-1.663c0.362-0.592,0.698-1.326,1.012-2.201 c0.593-1.657,1.037-2.747,1.338-3.28c0.296-0.533,0.693-0.929,1.178-1.189c0.486-0.261,1.254-0.39,2.303-0.39l0.728,0.018v-3.794 c-0.377,0.012-0.626,0.018-0.747,0.018c-2.365,0-4.083,0.331-5.147,1.005c-1.071,0.669-2.143,2.379-3.208,5.132 c-0.84,2.16-1.469,3.48-1.87,3.954c-0.403,0.474-1.178,0.769-2.325,0.882V37.13H71.008L71.008,37.13L71.008,37.13z M96.636,49.755 L96.636,49.755l-4.422-0.8c0.498-1.781,1.35-3.094,2.562-3.954c1.22-0.851,3.02-1.282,5.41-1.282c2.179,0,3.796,0.261,4.859,0.774 c1.061,0.515,1.812,1.167,2.243,1.958c0.432,0.795,0.652,2.244,0.652,4.363l-0.053,5.688c0,1.616,0.075,2.813,0.235,3.582 c0.153,0.763,0.451,1.592,0.877,2.468h-4.824c-0.125-0.326-0.284-0.806-0.467-1.439c-0.078-0.289-0.139-0.479-0.171-0.572 c-0.837,0.81-1.724,1.413-2.672,1.821c-0.947,0.403-1.959,0.604-3.036,0.604c-1.893,0-3.391-0.516-4.48-1.539 c-1.095-1.03-1.64-2.331-1.64-3.906c0-1.036,0.249-1.966,0.747-2.781c0.496-0.817,1.194-1.439,2.089-1.871 c0.894-0.433,2.19-0.812,3.877-1.137c2.272-0.426,3.853-0.829,4.728-1.194v-0.485c0-0.941-0.229-1.604-0.69-2.008 c-0.463-0.396-1.333-0.598-2.616-0.598c-0.872,0-1.545,0.172-2.031,0.516C97.328,48.299,96.938,48.896,96.636,49.755L96.636,49.755z M103.15,53.709L103.15,53.709c-0.62,0.207-1.608,0.456-2.965,0.745c-1.348,0.291-2.231,0.573-2.651,0.847 c-0.632,0.456-0.953,1.024-0.953,1.717c0,0.687,0.255,1.272,0.765,1.77s1.153,0.746,1.941,0.746c0.881,0,1.716-0.291,2.516-0.864 c0.591-0.438,0.977-0.978,1.159-1.615c0.13-0.415,0.188-1.208,0.188-2.374V53.709z"></path> <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M43.08,53.752H22.398v-7.706H43.08V53.752L43.08,53.752z M43.08,44.12L43.08,44.12H22.398v-7.705H43.08V44.12L43.08,44.12z M43.08,63.381L43.08,63.381H22.398v-7.703H43.08V63.381z"></path> <g> <rect x="23.149" y="46.797" fill-rule="evenodd" clip-rule="evenodd" fill="#E1001A" width="19.18" height="6.203"></rect> <rect x="23.149" y="37.166" fill-rule="evenodd" clip-rule="evenodd" fill="#1A171B" width="19.18" height="6.202"></rect> <rect x="23.149" y="56.428" fill-rule="evenodd" clip-rule="evenodd" fill="#FFE400" width="19.18" height="6.202"></rect> </g>
+            </svg>
+            <span>За высокую культуру строительства</span>
+          </a>
           <form class="header-form">
             <input class="header-input-text" name="search" type="text" placeholder="Введите название товара" />
             <button class="header-btn"><i></i>каталог</button>
@@ -70,13 +78,14 @@
           </div>
           <div class="header-socials">
             <a href="#" class="header-social-btn">
+              <img src="img/whatss.svg" alt="">
               <svg class="icon">
-                <use xlink:href="img/sprite.svg#tgg"></use>
+                <use xlink:href="img/sprite.svg#whatss"></use>
               </svg>
             </a>
             <a href="#" class="header-social-btn">
               <svg class="icon">
-                <use xlink:href="img/sprite.svg#whatss"></use>
+                <use xlink:href="img/sprite.svg#tgg"></use>
               </svg>
             </a>
           </div>
@@ -132,17 +141,20 @@
             <div class="card-info-col-1">
               <div class="card-slider slider-pro" id="example4">
                 <div class="card-thumbs sp-thumbnails">
-                  <a href="#" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
-                  <a href="#" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
-                  <a href="#" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
-                  <a href="#" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img src="img/product-slide-1.png" class="sp-thumbnail"></a>
                 </div> 
                 <div class="card-slides sp-slides">
                   <div class="card-slide sp-slide">
-                    <img class="card-slide-image sp-image" src="img/product-slide-big.png" alt="">
+                    <a data-fancybox="gallery-1" href="img/product-slide-big.png">
+                      <img class="card-slide-image sp-image" src="img/product-slide-big.png" alt="">
+                    </a>                    
                     <a href="#" class="card-slide-arrow"></a>
                   </div>
                 </div>
+
               </div><!--card-slider-->
             </div><!--card-info-col-1-->
             <div class="card-info-col-2">
@@ -227,321 +239,432 @@
             <div class="card-fixed-row">
               <div class="card-fixed-l">
                 <div class="card-fixed-prod-info">
-                 <div class="card-fixed-info-l">
-                  <img src="img/card-fix.png" alt="">
+                  <div class="card-fixed-info-l">
+                    <img src="img/card-fix.png" alt="">
+                  </div>
+                  <div class="card-fixed-info-r">
+                    <div class="card-fixed-tit">Штукатурная станция Kaleta 4/230</div>
+                    <div class="card-info">
+                      <div class="card-reviews">
+                        <div class="card-reviews-caption">2 отзыва</div>
+                        <div class="stars">
+                          <span class="star"></span>
+                          <span class="star"></span>
+                          <span class="star"></span>
+                          <span class="star star-o"></span>
+                          <span class="star star-o"></span>
+                        </div>
+                      </div>
+                      <div class="card-article">Артикул: 999999999</div>
+                      <div class="card-status card-status-stock">В наличии</div>  
+                    </div><!--card-info-->  
+                  </div><!--card-fixed-info-r-->
+                </div><!--card-fixed-prod-info-->
+              </div><!--card-fixed-l-->
+              <div class="card-fixed-r">
+                <div class="card-price-top card-price-fixed-top">
+                  <b>502 000 ₽</b>
+                  <span>цена с НДС</span>
                 </div>
-                <div class="card-fixed-info-r">
-                  <div class="card-fixed-tit">Штукатурная станция Kaleta 4/230</div>
-                  <div class="card-info">
-                    <div class="card-reviews">
-                      <div class="card-reviews-caption">2 отзыва</div>
-                      <div class="stars">
-                        <span class="star"></span>
-                        <span class="star"></span>
-                        <span class="star"></span>
-                        <span class="star star-o"></span>
-                        <span class="star star-o"></span>
+                <a href="#" class="card-fixed-btn btn">Купить</a>
+                <div class="card-fixed-actions">
+                  <a href="#" class="card-action"><i class="watch"></i>Отложить</a>
+                  <a href="#" class="card-action"><i class="tools"></i>Сравнить</a>
+                </div><!--card-fixed-actions-->
+              </div><!--card-fixed-r-->
+            </div><!--card-fixed-row-->
+          </div>
+        </div><!--card-fixed-row-w-->
+        <div class="card-fixed-bread-row-w">
+          <div class="contain">
+            <div class="card-fixed-bread-row">
+              <ul class="bread-ul card-fixed-bread-ul">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Оборудование</a></li>
+                <li><a href="#">Штукатурные станции</a></li>
+                <li><span>Штукатурная станция Kaleta 4/230</span></li>
+              </ul>
+
+
+              <div class="card-fixed-credit-col">
+                <a href="#" class="card-credit-item">                
+                  <span class="card-credit-arrow"></span>
+                  <span class="card-credit-content">
+                    <span class="card-credit-item-caption">Купить в кредит</span>              
+                  </span>
+                </a>
+
+                <a href="#" class="card-credit-item">    
+                  <span class="card-credit-arrow"></span>            
+                  <span class="card-credit-content">
+                    <span class="card-credit-item-caption">Оформить лизинг</span>              
+                  </span>
+                </a>
+              </div><!--card-fixed-credit-col-->
+
+            </div><!--card-fixed-bread-row-->
+          </div><!--contain-->
+        </div><!--card-fixed-bread-row-w-->    
+      </div><!--card-fixed-->
+
+      <div class="card-tabs-row">
+        <div class="contain">
+          <div class="tabs-control-row">
+            <ul class="tabs-control tabs-control-1">
+              <li class="tabs_control_item active">
+                <a href="#" class="tabs_control_link">
+                  Описание товара       
+                </a>
+              </li>
+              <li class="tabs_control_item">
+                <a href="#" class="tabs_control_link">
+                  Характеристики           
+                </a>
+              </li>
+              <li class="tabs_control_item">
+                <a href="#" class="tabs_control_link">
+                  Виды материалов
+                </a>
+              </li>
+              <li class="tabs_control_item">
+                <a href="#" class="tabs_control_link">
+                  Комплектация
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs_content-w">
+        <div class="contain">
+          <ul class="tabs_content tabs_content-1">
+            <li class="tabs_content_item active">                 
+
+
+
+
+
+              <div class="ab">
+                <div class="ab-w">
+                  <div class="ab-w-2">
+                    <div class="ab-top">
+                      <div class="ab-top-img"><img src="img/bulb.svg"></div>
+                      <div class="ab-top-txt"><span class="ab-top-txt-span">Штукатурная станция Kaleta-4</span>предназначена для механического нанесения штукатурки непрерывным способом, используя готовые сухие строительные смеси. Работает от однофазной электросети 220В, применяется бригадами на небольших объетах: квартиры, коттеджи.</div>
+                    </div>
+                    <div class="ab-d">
+                      <div class="ab-d-col-1">
+                        <div class="ab-d-inf">
+                          <div class="ab-d-inf-txt-1">о товаре:</div>
+                          <ul class="ab-d-inf-ul">
+                            <li>Недорогая в обслуживании</li>
+                            <li>Постоянное наличие запасных частей и расходных материалов.</li>
+                            <li>Стандартная комплектация: штукатурный пистолет, рукав для подачи смеси, шнековая пара.</li>
+                            <li>Страна производства - Польша.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ab-d-col-2">
+                        <div class="ab-d-inf">
+                          <div class="ab-d-inf-txt-1">Область применения:</div>
+                          <ul class="ab-d-inf-ul">
+                            <li>Приготовление и нанесение набрызга (обрызга);</li>
+                            <li> Приготовление и нанесение на стены и потолок гипсовых и цементных штукатурок;</li>
+                            <li>Устройство наливных полов и цементных стяжек;</li>
+                            <li> Нанесение клеевых и армирующих растворов при устройстве СФТК</li>
+                            <li>Приобретая штукатурную станцию Калета-4 вы получаете Гарантию на оборудование - 1 год.</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                    <div class="card-article">Артикул: 999999999</div>
-                    <div class="card-status card-status-stock">В наличии</div>  
-                  </div><!--card-info-->  
-                </div><!--card-fixed-info-r-->
-              </div><!--card-fixed-prod-info-->
-            </div><!--card-fixed-l-->
-            <div class="card-fixed-r">
-              <div class="card-price-top card-price-fixed-top">
-                <b>502 000 ₽</b>
-                <span>цена с НДС</span>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="card-fixed-btn btn">Купить</a>
-              <div class="card-fixed-actions">
-                <a href="#" class="card-action"><i class="watch"></i>Отложить</a>
-                <a href="#" class="card-action"><i class="tools"></i>Сравнить</a>
-              </div><!--card-fixed-actions-->
-            </div><!--card-fixed-r-->
-          </div><!--card-fixed-row-->
-        </div>
-      </div><!--card-fixed-row-w-->
-      <div class="card-fixed-bread-row-w">
-        <div class="contain">
-          <div class="card-fixed-bread-row">
-            <ul class="bread-ul card-fixed-bread-ul">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Оборудование</a></li>
-              <li><a href="#">Штукатурные станции</a></li>
-              <li><span>Штукатурная станция Kaleta 4/230</span></li>
-            </ul>
-
-
-            <div class="card-fixed-credit-col">
-              <a href="#" class="card-credit-item">                
-                <span class="card-credit-arrow"></span>
-                <span class="card-credit-content">
-                  <span class="card-credit-item-caption">Купить в кредит</span>              
-                </span>
-              </a>
-
-              <a href="#" class="card-credit-item">    
-                <span class="card-credit-arrow"></span>            
-                <span class="card-credit-content">
-                  <span class="card-credit-item-caption">Оформить лизинг</span>              
-                </span>
-              </a>
-            </div><!--card-fixed-credit-col-->
-
-          </div><!--card-fixed-bread-row-->
-        </div><!--contain-->
-      </div><!--card-fixed-bread-row-w-->    
-    </div><!--card-fixed-->
-
-    <div class="card-tabs-row">
-      <div class="contain">
-        <div class="tabs-control-row">
-          <ul class="tabs-control tabs-control-1">
-            <li class="tabs_control_item active">
-              <a href="#" class="tabs_control_link">
-                Описание товара       
-              </a>
             </li>
-            <li class="tabs_control_item">
-              <a href="#" class="tabs_control_link">
-                Характеристики           
-              </a>
+            <li class="tabs_content_item">                          
+              2
             </li>
-            <li class="tabs_control_item">
-              <a href="#" class="tabs_control_link">
-                Виды материалов
-              </a>
+            <li class="tabs_content_item">
+              3                            
             </li>
-            <li class="tabs_control_item">
-              <a href="#" class="tabs_control_link">
-                Комплектация
-              </a>
+            <li class="tabs_content_item">                            
+              4
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="tabs_content-w">
-      <div class="contain">
-        <ul class="tabs_content tabs_content-1">
-          <li class="tabs_content_item active">                 
+  </div><!--card-->
+
+
+  <div class="vid">
+    <a href="#" class="vid-a">video</a>
+  </div>
 
 
 
 
+  <div class="try">
+    <div class="contain">
+      <div class="try-w">
+        <div class="try-h">Опробуйте станцию перед покупкой!</div>
+        <div class="try-form-w">
+          <div class="try-txt">
+            <span class="try-txt-span">В НеМ.КЕ самый большой шоу-рум оборудования в Москве,</span>всегда в наличии более 20 моделей штукатурных и шпаклевочных станций, пневмотранспортных установок, проточных смесителей PFT,
+            Kaleta, Maltech, M-tec и других производителей
+          </div>
+          <form class="try-w-form">
+            <div class="try-form-row row7">
+              <div class="try-form-col col-25"><input class="input try-input-text try-input-name" type="text" placeholder="Имя" /></div>
+              <div class="try-form-col col-25"><input class="input try-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37" /></div>
+              <div class="try-form-col col-25"><input class="input try-input-text try-input-date" type="text" placeholder="2021-09-09" /></div>
+              <div class="try-form-col col-25"><button class="try-btn btn">Записаться на посещение</button></div>
+            </div>                                        
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="adv">
+    <div class="adv-row">
+      <div class="adv-col-1">
+        <div class="adv-col-1-it adv-col-1-it-1">
+          <div class="adv-col-1-txt">
+            Гарантия<br />
+            и сервис
+          </div>
+        </div>
+      </div>
+      <div class="adv-col-2">
+        <div class="adv-col-2-it">
+          <div class="adv-col-2-it-txt-w">
+            <div class="adv-col-2-it-txt-1">Расширенная гарантия 24 месяца</div>
+            <p>В день обращения мы выезжаем к клиенту в случае наступления гарантийного случая, быстро производим ремонт и замену запасных частей за свой счет.</p>
+            <p>В день обращения мы выезжаем к клиенту в случае наступления гарантийного случая, быстро производим ремонт и замену запасных частей за свой счет.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="adv-row">
+      <div class="adv-col-1">
+        <div class="adv-col-1-it adv-col-1-it-2"><div class="adv-col-1-txt">Обучение в подарок</div></div>
+      </div>
+      <div class="adv-col-2">
+        <div class="adv-col-2-it">
+          <div class="adv-col-2-it-txt-w">
+            <div class="adv-col-2-it-txt-1">Компания НеМ.Ка проводит бесплатное обучение бригады</div>
+            <p class="adv-col-2-it-txt-2">(до 5 человек) работе на штукатурной станции при условии её покупки в НеМ.Ке</p>
+            <p class="adv-col-2-it-txt-2">
+              В НеМ.КЕ мы проводим обучение строительных бригад механизированным технологиям отделки, оказываем техническую поддержку клиентов, использующих оборудование малой механизации в отделке.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pos-sid">
+    <div class="contain">
+      <div class="pos-sid-w">
+        <div class="pos-sid-h">Опробуйте станцию перед покупкой!</div>
+        <div class="pos-sid-it-w">
 
-            <div class="ab">
-              <div class="ab-w">
-                <div class="ab-w-2">
-                  <div class="ab-top">
-                    <div class="ab-top-img"><img src="img/bulb.svg"></div>
-                    <div class="ab-top-txt"><span class="ab-top-txt-span">Штукатурная станция Kaleta-4</span>предназначена для механического нанесения штукатурки непрерывным способом, используя готовые сухие строительные смеси. Работает от однофазной электросети 220В, применяется бригадами на небольших объетах: квартиры, коттеджи.</div>
+          <div class="pos-sid-col">
+            <div class="pos-sid-it">
+              <div class="pos-sid-it-head"><div class="pos-sid-it-txt-1">ЭФФЕКТИВНОСТЬ</div></div>
+              <div class="pos-sid-adv">
+                <div class="pos-sid-adv-w">
+                  <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">10.000 рублей</span>дополнительная эффективность бригады</div>
+                  <div class="pos-sid-adv-bord">
+                    <div class="pos-sid-adv-txt-2">Приносит дополнительный доход:</div>
+                    <div class="pos-sid-adv-txt-3">+2.640.000 рублей в год</div>
                   </div>
-                  <div class="ab-d">
-                    <div class="ab-d-col-1">
-                      <div class="ab-d-inf">
-                        <div class="ab-d-inf-txt-1">о товаре:</div>
-                        <ul class="ab-d-inf-ul">
-                          <li>Недорогая в обслуживании</li>
-                          <li>Постоянное наличие запасных частей и расходных материалов.</li>
-                          <li>Стандартная комплектация: штукатурный пистолет, рукав для подачи смеси, шнековая пара.</li>
-                          <li>Страна производства - Польша.</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="ab-d-col-2">
-                      <div class="ab-d-inf">
-                        <div class="ab-d-inf-txt-1">Область применения:</div>
-                        <ul class="ab-d-inf-ul">
-                          <li>Приготовление и нанесение набрызга (обрызга);</li>
-                          <li> Приготовление и нанесение на стены и потолок гипсовых и цементных штукатурок;</li>
-                          <li>Устройство наливных полов и цементных стяжек;</li>
-                          <li> Нанесение клеевых и армирующих растворов при устройстве СФТК</li>
-                          <li>Приобретая штукатурную станцию Калета-4 вы получаете Гарантию на оборудование - 1 год.</li>
-                        </ul>
-                      </div>
-                    </div>
+                  <div class="pos-sid-adv-txt-4">
+                    22 рабочих смены в месяц, <br />
+                    150 рублей за кв.м., <br />
+                    150 кв. м. в смену
                   </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li class="tabs_content_item">                          
-            2
-          </li>
-          <li class="tabs_content_item">
-            3                            
-          </li>
-          <li class="tabs_content_item">                            
-            4
-          </li>
-        </ul>
+          </div>
+
+          <div class="pos-sid-col">
+            <div class="pos-sid-it">
+              <div class="pos-sid-it-head"><div class="pos-sid-it-txt-1">ПЕРСПЕКТИВНОСТЬ</div></div>
+              <div class="pos-sid-adv">
+                <div class="pos-sid-adv-w">
+                  <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">3.000 рублей аренда</span>без оператора</div>
+                  <div class="pos-sid-adv-bord">
+                    <div class="pos-sid-adv-txt-2">Приносит дополнительный доход:</div>
+                    <div class="pos-sid-adv-txt-3">+792.000 руб/год x кол-во машин</div>
+                  </div>
+                  <div class="pos-sid-adv-txt-4">
+                    22 рабочих смены в месяц, <br />
+                    150 рублей за кв.м., <br />
+                    150 кв. м. в смену
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pos-sid-col">
+            <div class="pos-sid-it">
+              <div class="pos-sid-it-head"><div class="pos-sid-it-txt-1">КОМПЕТЕНТНОСТЬ</div></div>
+              <div class="pos-sid-adv">
+                <div class="pos-sid-adv-w">
+                  <div class="pos-sid-adv-txt-1">
+                    <span class="pos-sid-adv-txt-1-span">0 рублей</span>
+                    <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">стоимость обучения бригады при покупке</div></div>
+                  </div>
+                  <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">24 месяца гарантии</span></div>
+                  <div class="pos-sid-adv-txt-1">
+                    <span class="pos-sid-adv-txt-1-span">30 дней</span>
+                    <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">отсрочки первого взноса по кредиту Tinkoff</div></div>
+                  </div>
+                  <div class="pos-sid-adv-txt-1">
+                    <span class="pos-sid-adv-txt-1-span">24 часа</span>
+                    <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">срок поставки подменного оборудования</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </div><!--pos-sid-->
 
 
-</div><!--card-->
-
-
-<div class="vid">
-  <a href="#" class="vid-a">video</a>
-</div>
-
-
-
-
-<div class="try">
-  <div class="contain">
-    <div class="try-w">
-      <div class="try-h">Опробуйте станцию перед покупкой!</div>
-      <div class="try-form-w">
-        <div class="try-txt">
-          <span class="try-txt-span">В НеМ.КЕ самый большой шоу-рум оборудования в Москве,</span>всегда в наличии более 20 моделей штукатурных и шпаклевочных станций, пневмотранспортных установок, проточных смесителей PFT,
-          Kaleta, Maltech, M-tec и других производителей
-        </div>
-        <form class="try-w-form">
-          <div class="try-form-row row7">
-            <div class="try-form-col col-25"><input class="input try-input-text try-input-name" type="text" placeholder="Имя" /></div>
-            <div class="try-form-col col-25"><input class="input try-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37" /></div>
-            <div class="try-form-col col-25"><input class="input try-input-text try-input-date" type="text" placeholder="2021-09-09" /></div>
-            <div class="try-form-col col-25"><button class="try-btn btn">Записаться на посещение</button></div>
-          </div>                                        
+  <div class="call-back">
+    <div class="contain">
+      <div class="call-back-w">
+        <div class="call-back-txt">ДАВАЙТЕ, МЫ ВАМ ПЕРЕЗВОНИМ!</div>
+        <div class="call-back-form-after"></div>
+        <form class="call-back-form">
+          <input class="input call-input-text try-input-name" type="text" placeholder="Имя" />
+          <input class="input call-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37" />
+          <input class="input call-input-text try-input-date" type="text" placeholder="2021-09-09" />
+          <button class="call-btn btn">Записаться на посещение</button>
         </form>
       </div>
     </div>
   </div>
-</div>
-<div class="adv">
-  <div class="adv-row">
-    <div class="adv-col-1">
-      <div class="adv-col-1-it adv-col-1-it-1">
-        <div class="adv-col-1-txt">
-          Гарантия<br />
-          и сервис
+
+
+
+
+  <div class="reviews">
+    <div class="contain">
+      <div class="reviews-row">
+        <div class="reviews-l">
+          <div class="reviews-item">
+            <div class="reviews-item-row-1">
+              <div class="reviews-img-w"><img src="img/rev-ava.jpg"></div>
+              <div class="reviews-name-date">
+                <div class="reviews-name">Максим лаврентьев</div>
+                <div class="reviews-date">27.08.2021</div>
+              </div>
+              <div class="stars reviews-item-stars">                
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star star-o"></span>
+                <span class="star star-o"></span>                  
+              </div>
+            </div>
+            <div class="reviews-table">
+              <div class="reviews-table-row">
+                <div class="reviews-table-col-1">Достоинства:</div>
+                <div class="reviews-table-col-2">Крепкая конструкция. Соотношение цена-качество. Простая в управлении и уходе.</div>
+              </div>
+              <div class="reviews-table-row">
+                <div class="reviews-table-col-1">Недостатки:</div>
+                <div class="reviews-table-col-2">Родной шнек проходил долго, дополнительные быстровато вылетели.</div>
+              </div>
+              <div class="reviews-table-row">
+                <div class="reviews-table-col-1">Комментарий:</div>
+                <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item-row-1">
+              <div class="reviews-img-w"><img src="img/rev-ava.jpg"></div>
+              <div class="reviews-name-date">
+                <div class="reviews-name">Максим лаврентьев</div>
+                <div class="reviews-date">27.08.2021</div>
+              </div>
+              <div class="stars reviews-item-stars">                
+                <span class="star star-green"></span>
+                <span class="star star-green"></span>
+                <span class="star star-green"></span>
+                <span class="star star-o"></span>
+                <span class="star star-o"></span>                  
+              </div>
+            </div>
+            <div class="reviews-table">
+              <div class="reviews-table-row">
+                <div class="reviews-table-col-1">Достоинства:</div>
+                <div class="reviews-table-col-2">Крепкая конструкция. Соотношение цена-качество. Простая в управлении и уходе.</div>
+              </div>
+              <div class="reviews-table-row">
+                <div class="reviews-table-col-1">Недостатки:</div>
+                <div class="reviews-table-col-2">Родной шнек проходил долго, дополнительные быстровато вылетели.</div>
+              </div>
+              <div class="reviews-table-row">
+                <div class="reviews-table-col-1">Комментарий:</div>
+                <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
+              </div>
+            </div>
+          </div><a href="#" class="more-revs">поСмотреть больше отзывов</a>
         </div>
-      </div>
-    </div>
-    <div class="adv-col-2">
-      <div class="adv-col-2-it">
-        <div class="adv-col-2-it-txt-w">
-          <div class="adv-col-2-it-txt-1">Расширенная гарантия 24 месяца</div>
-          <p>В день обращения мы выезжаем к клиенту в случае наступления гарантийного случая, быстро производим ремонт и замену запасных частей за свой счет.</p>
-          <p>В день обращения мы выезжаем к клиенту в случае наступления гарантийного случая, быстро производим ремонт и замену запасных частей за свой счет.</p>
+        <div class="reviews-r">
+          <div class="rrating">
+            <div class="rrating-tit">Рейтинг товара: </div>
+            <div class="rrating-row"><span class="rrating-mark">3,5</span>              
+             <div class="stars reviews-item-stars rrating-stars">                
+              <span class="star star-green"></span>
+              <span class="star star-green"></span>
+              <span class="star star-green"></span>
+              <span class="star star-o"></span>
+              <span class="star star-o"></span>                  
+            </div>
+          </div>
+          <div class="rrating-txt">Рассчитано на основании 10 оценок</div>
+          <div class="rrating-tbl">
+            <div class="rrating-tbl-row">
+              <div class="rrating-col-l">
+                <div class="stars reviews-item-stars">                
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star star-o"></span>
+                  <span class="star star-o"></span>                  
+                </div>
+              </div>
+              <div class="rrating-col-r">50% - 1 оценка</div>
+            </div>
+            <div class="rrating-tbl-row">
+              <div class="rrating-col-l">
+                <div class="stars reviews-item-stars">                
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star star-o"></span>
+                  <span class="star star-o"></span>                  
+                </div>
+              </div>
+              <div class="rrating-col-r">50% - 1 оценка</div>
+            </div>
+          </div>
+          <a href="#" class="rrating-btn btn">Оставить отзыв</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="adv-row">
-    <div class="adv-col-1">
-      <div class="adv-col-1-it adv-col-1-it-2"><div class="adv-col-1-txt">Обучение в подарок</div></div>
-    </div>
-    <div class="adv-col-2">
-      <div class="adv-col-2-it">
-        <div class="adv-col-2-it-txt-w">
-          <div class="adv-col-2-it-txt-1">Компания НеМ.Ка проводит бесплатное обучение бригады</div>
-          <p class="adv-col-2-it-txt-2">(до 5 человек) работе на штукатурной станции при условии её покупки в НеМ.Ке</p>
-          <p class="adv-col-2-it-txt-2">
-            В НеМ.КЕ мы проводим обучение строительных бригад механизированным технологиям отделки, оказываем техническую поддержку клиентов, использующих оборудование малой механизации в отделке.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-<div class="pos-sid">
-  <div class="contain">
-    <div class="pos-sid-w">
-      <div class="pos-sid-h">Опробуйте станцию перед покупкой!</div>
-      <div class="pos-sid-it-w">
-
-        <div class="pos-sid-col">
-          <div class="pos-sid-it">
-            <div class="pos-sid-it-head"><div class="pos-sid-it-txt-1">ЭФФЕКТИВНОСТЬ</div></div>
-            <div class="pos-sid-adv">
-              <div class="pos-sid-adv-w">
-                <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">10.000 рублей</span>дополнительная эффективность бригады</div>
-                <div class="pos-sid-adv-bord">
-                  <div class="pos-sid-adv-txt-2">Приносит дополнительный доход:</div>
-                  <div class="pos-sid-adv-txt-3">+2.640.000 рублей в год</div>
-                </div>
-                <div class="pos-sid-adv-txt-4">
-                  22 рабочих смены в месяц, <br />
-                  150 рублей за кв.м., <br />
-                  150 кв. м. в смену
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pos-sid-col">
-          <div class="pos-sid-it">
-            <div class="pos-sid-it-head"><div class="pos-sid-it-txt-1">ПЕРСПЕКТИВНОСТЬ</div></div>
-            <div class="pos-sid-adv">
-              <div class="pos-sid-adv-w">
-                <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">3.000 рублей аренда</span>без оператора</div>
-                <div class="pos-sid-adv-bord">
-                  <div class="pos-sid-adv-txt-2">Приносит дополнительный доход:</div>
-                  <div class="pos-sid-adv-txt-3">+792.000 руб/год x кол-во машин</div>
-                </div>
-                <div class="pos-sid-adv-txt-4">
-                  22 рабочих смены в месяц, <br />
-                  150 рублей за кв.м., <br />
-                  150 кв. м. в смену
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pos-sid-col">
-          <div class="pos-sid-it">
-            <div class="pos-sid-it-head"><div class="pos-sid-it-txt-1">КОМПЕТЕНТНОСТЬ</div></div>
-            <div class="pos-sid-adv">
-              <div class="pos-sid-adv-w">
-                <div class="pos-sid-adv-txt-1">
-                  <span class="pos-sid-adv-txt-1-span">0 рублей</span>
-                  <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">стоимость обучения бригады при покупке</div></div>
-                </div>
-                <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">24 месяца гарантии</span></div>
-                <div class="pos-sid-adv-txt-1">
-                  <span class="pos-sid-adv-txt-1-span">30 дней</span>
-                  <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">отсрочки первого взноса по кредиту Tinkoff</div></div>
-                </div>
-                <div class="pos-sid-adv-txt-1">
-                  <span class="pos-sid-adv-txt-1-span">24 часа</span>
-                  <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">срок поставки подменного оборудования</div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div><!--pos-sid-->
-
-
-<div class="call-back">
-  <div class="contain">
-    <div class="call-back-w">
-      <div class="call-back-txt">ДАВАЙТЕ, МЫ ВАМ ПЕРЕЗВОНИМ!</div>
-      <form class="call-back-form">
-       <input class="input call-input-text try-input-name" type="text" placeholder="Имя" />
-       <input class="input call-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37" />
-       <input class="input call-input-text try-input-date" type="text" placeholder="2021-09-09" />
-       <button class="call-btn btn">Записаться на посещение</button>
-     </form>
-   </div>
- </div>
-</div>
-
 
 
 <div class="help">
@@ -645,6 +768,9 @@
 
 </div><!--wrapper-->
 <script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery-ui-timepicker-addon.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
