@@ -1346,7 +1346,7 @@ input[type="text"].try-input-date {
 
 .pos-sid-adv {
   background: rgb(248, 248, 248);  
-  padding: 23px 40px 27px;
+  padding: 23px 40px 31px;
   border-radius: 0 0 5px 5px;
   display: flex;  
   flex-direction: column;
@@ -1363,9 +1363,10 @@ input[type="text"].try-input-date {
   line-height: 1.2;
   text-align: center;
   color: rgb(41, 40, 45);
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   border-bottom: 1px solid rgb(41, 40, 45);
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  min-height: 44px;
 }
 
 .pos-sid-adv-txt-1-span {
@@ -1385,7 +1386,7 @@ input[type="text"].try-input-date {
   font-size: 14px;
   text-align: center;
   color: rgb(41, 40, 45);
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   line-height: 1.2;
 }
 
@@ -1398,7 +1399,7 @@ input[type="text"].try-input-date {
 }
 
 .pos-sid-adv-txt-4 {
-  margin-top: 23px;
+  margin-top: 29px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -1416,7 +1417,7 @@ input[type="text"].try-input-date {
   background: rgb(248, 248, 248);
   padding-top: 108px;
   padding-bottom: 117px;
-  margin-top: 92px;
+  margin-top: 88px;
 }
 
 
@@ -1458,7 +1459,7 @@ input[type="text"].try-input-date {
   content: "";
   display: block;
   position: absolute;
-  right: -200px;
+  right: -192px;
   top: 50%;    
   transform: translate(-50%, -50%);
   background: url("../img/phone-form-bg.png") $nr center;
@@ -1477,7 +1478,7 @@ input[type="text"].call-input-text {
 }
 
 .call-btn {
-  height: 75px; 
+  height: 90px; 
   font-weight: 600;
   font-size: 18px;  
   text-transform: uppercase;
@@ -1497,11 +1498,17 @@ h2 {
   margin-bottom: 27px;
   text-transform: uppercase;
 }
+
+.help-form-row {
+  margin-top: 39px;
+}
+
 .help-form-w {
+  margin-top: 33px;
   p {
     font-size: 22px;
     line-height: 151%;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     background-color: #FFF;
   }
   form {    
@@ -1548,13 +1555,14 @@ h2 {
 
 .footer-row-1 {
   padding-bottom: 39px;
-  display: flex;
-  justify-content: space-between;  
-  border-bottom: 1px solid rgb(196, 196, 196);
-  border-image: initial;
+  display: flex;  
+  border-bottom: 1px solid rgb(196, 196, 196);  
+
 }
 
 .footer-col-1 {
+  width: 204px;
+  margin-right: 101px;
 }
 
 .foot-mnu {
@@ -1573,6 +1581,33 @@ h2 {
 
 
 .footer-col-2 {
+  width: 230px;
+  margin-right: 45px;
+  margin-right: 125px;
+}
+
+.footer-col-3 {
+  width: 210px;
+  margin-right: 48px;
+}
+.footer-col-4 {
+  padding-top: 31px;
+  margin-right: 119px;
+}
+.footer-col-5 {
+  display: flex;  
+          flex-direction: column;
+          -webkit-justify-content: flex-end;
+                  justify-content: flex-end;
+}
+.footer-col-6 {
+  margin-left: auto;
+  padding-top: 40px;
+  width: 103px;
+}
+
+.foot-mnu-2 {
+  margin-top: 9px;
 }
 
 .footer-text-item {
@@ -1614,8 +1649,10 @@ h2 {
 
 .footer-adress-it {
   font-size: 16px;
-  line-height: 1.2;
-  margin-bottom: 21px;
+  line-height: 1.2;  
+  + .footer-adress-it {
+    margin-top: 21px;
+  }
 }
 
 .footer-adress-tit {
@@ -1672,7 +1709,8 @@ h2 {
 .rights {
   font-size: 14px;
   line-height: 1.4;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
+  margin-top: 4px;
 }
 
 .footer-copy-row {
@@ -1681,13 +1719,18 @@ h2 {
 }
 
 .copy {
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 121px;
 }
 
 .copy-link {
   color: rgb(255, 255, 255);
   font-size: 14px;
   text-decoration-line: underline;
-  margin-left: 47px;
+  &:not(:last-child) {
+   margin-right: 50px; 
+  }  
 }
 
 
@@ -1698,7 +1741,7 @@ h2 {
 
 
 .reviews {
-  padding-bottom: 102px;
+  padding-bottom: 96px;
   padding-top: 90px;
 }
 
@@ -1718,8 +1761,8 @@ h2 {
   box-sizing: border-box;
   box-shadow: rgba(202, 202, 202, 0.4) 2px 2px 7px;
   border-radius: 5px;
-  padding: 31px 50px 41px 71px;
-  margin-bottom: 20px;
+  padding: 38px 50px 38px 71px;
+  margin-bottom: 20px;    
 }
 
 .reviews-item-row-1 {
@@ -1741,13 +1784,14 @@ h2 {
 .reviews-name-date {
   width: 100%;
   flex-grow: 1;
+  padding-top: 2px;
 }
 
 .reviews-name {
   font-size: 24px;
   text-transform: uppercase;
   color: rgb(41, 40, 45);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -1763,7 +1807,7 @@ h2 {
     width: 25px;
     height: 25px;    
     background-size: 25px;
-    margin: 0 2px;
+    margin: 0 1.5px;
   }
 }
 
@@ -1774,8 +1818,11 @@ h2 {
 .reviews-table-row {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
+  margin-bottom: 33px;
+  width: 100%;  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .reviews-table-col-1 {  
@@ -1785,7 +1832,7 @@ h2 {
   text-transform: uppercase;
   color: rgb(41, 40, 45);
   padding-right: 15px;
-  max-width: 160px;
+  max-width: 164px;
   width: 100%;
   flex: none;
 }
@@ -1805,7 +1852,7 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 13px;
   min-height: 35px;
   &:hover {
     text-decoration: none;
