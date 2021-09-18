@@ -24,7 +24,7 @@ jQuery(document).ready(function( $ ) {
 
 /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -36,11 +36,20 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});
+});*/
 
 /************************************/
 
+ $('div.lazy').lazy();
 
+
+  $('img.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,  
+  });
+
+  
   $('.card-thumb').click(function (e) {
     $('.card-thumb').removeClass('active');
     const href = $(this).attr('href');

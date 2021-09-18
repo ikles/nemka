@@ -1911,7 +1911,6 @@ button {
       height: 4px; }
 
 .vid {
-  background-image: url("../img/video-fon-1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   text-align: center;
@@ -2061,12 +2060,6 @@ input[type="text"].try-input-date {
   width: 59.4%;
   position: relative;
   z-index: 2; }
-
-.adv-col-1-it-1 {
-  background-image: url("../img/adv-1.jpg"); }
-
-.adv-col-1-it-2 {
-  background-image: url("../img/adv-2.jpg"); }
 
 .adv-col-1-it {
   background-repeat: no-repeat;
@@ -2299,7 +2292,6 @@ input[type="text"].try-input-date {
   z-index: 2; }
 
 .call-back-w {
-  background-image: url("../img/call-back-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -2323,7 +2315,6 @@ input[type="text"].try-input-date {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url("../img/phone-form-bg.png") no-repeat center;
   width: 1018px;
   height: 678px;
   background-size: 1018px;
@@ -2354,8 +2345,20 @@ h2 {
 .help-form-row {
   margin-top: 39px; }
 
+.help-form-before {
+  content: "";
+  display: block;
+  z-index: 1;
+  position: absolute;
+  right: -140px;
+  bottom: -110px;
+  width: 545px;
+  height: 576px;
+  background-size: cover; }
+
 .help-form-w {
-  margin-top: 33px; }
+  margin-top: 33px;
+  position: relative; }
   .help-form-w p {
     font-size: 22px;
     line-height: 151%;
@@ -2366,19 +2369,7 @@ h2 {
     background-color: #FFF;
     padding: 38px 65px;
     box-shadow: 2px 2px 7px rgba(202, 202, 202, 0.65);
-    border-radius: 5px;
-    position: relative; }
-    .help-form-w form:before {
-      content: "";
-      display: block;
-      z-index: 1;
-      position: absolute;
-      right: -140px;
-      bottom: -110px;
-      width: 545px;
-      height: 576px;
-      background: url("../img/man.png");
-      background-size: cover; }
+    border-radius: 5px; }
   .help-form-w .row7 {
     position: relative;
     z-index: 1; }

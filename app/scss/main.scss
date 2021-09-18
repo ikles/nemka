@@ -1016,8 +1016,7 @@ button {
 }
 
 
-.vid {
-  background-image: url("../img/video-fon-1.jpg");
+.vid {  
   background-repeat: no-repeat;
   background-position: top center;
   text-align: center;  
@@ -1199,10 +1198,10 @@ input[type="text"].try-input-date {
 }
 
 .adv-col-1-it-1 {
-  background-image: url("../img/adv-1.jpg");
+  
 }
 .adv-col-1-it-2 {
-  background-image: url("../img/adv-2.jpg");
+  
 }
 .adv-col-1-it {  
   background-repeat: no-repeat;
@@ -1442,8 +1441,7 @@ input[type="text"].try-input-date {
   z-index: 2;
 }
 
-.call-back-w {
-  background-image: url("../img/call-back-bg.jpg");
+.call-back-w {  
   background-repeat: no-repeat;
   background-position: center top;  
   background-size: cover;
@@ -1461,8 +1459,7 @@ input[type="text"].try-input-date {
   position: absolute;
   right: -192px;
   top: 50%;    
-  transform: translate(-50%, -50%);
-  background: url("../img/phone-form-bg.png") $nr center;
+  transform: translate(-50%, -50%);  
   width: 1018px;
   height: 678px;
   -webkit-background-size: 1018px;
@@ -1503,8 +1500,21 @@ h2 {
   margin-top: 39px;
 }
 
+.help-form-before {
+      content: "";
+      display: block;
+      z-index: 1;      
+      position: absolute;
+      right: -140px;
+      bottom: -110px;
+      width: 545px;
+      height: 576px;      
+      background-size: cover;
+    }
+
 .help-form-w {
   margin-top: 33px;
+  position: relative;
   p {
     font-size: 22px;
     line-height: 151%;
@@ -1517,20 +1527,7 @@ h2 {
     padding: 38px 65px;
     box-shadow: 2px 2px 7px rgba(202, 202, 202, 0.65);
     border-radius: 5px;    
-    position: relative;
-
-    &:before {
-      content: "";
-      display: block;
-      z-index: 1;      
-      position: absolute;
-      right: -140px;
-      bottom: -110px;
-      width: 545px;
-      height: 576px;
-      background: url("../img/man.png");
-      background-size: cover;
-    }
+      
   }
   .row7 {
     position: relative;
@@ -1953,6 +1950,13 @@ h2 {
   background-image: url('../img/star-green.svg');
 }
 
+.ui-datepicker-calendar {
+  thead {
+    td {
+      
+    }
+  }
+}
 
 .ui-datepicker {
   z-index: 5 !important;
