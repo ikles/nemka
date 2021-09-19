@@ -142,7 +142,7 @@ body {
 
 .header-logo {
   display: flex;  
-          align-items: flex-end;
+  align-items: flex-end;
   justify-content: center;  
   &:hover {
     text-decoration: none;
@@ -258,7 +258,7 @@ button {
 .header-call {
   display: flex;
   flex-direction: column;            
-          margin-left: 89px;
+  margin-left: 89px;
 }
 .header-phone {
   font-weight: 600;
@@ -279,8 +279,8 @@ button {
 }
 .js-top-callback {}
 .header-socials {  
-          
-      margin-left: auto;
+
+  margin-left: auto;
   display: flex;  
   justify-content: flex-end;
 }
@@ -405,7 +405,9 @@ button {
   width: 21px;
   height: 21px;
   background: url("../img/star.svg") $nr 0 0;
-  margin: 0 1px;
+  + .star {
+    margin-left: 1px;
+  }
 }
 .star-o {
  background: url("../img/star-o.svg") $nr 0 0; 
@@ -484,13 +486,14 @@ button {
     height: 16px;
     width: 18px;
     background-repeat: no-repeat;
-    background-position: $rc;
+    background-position: $rc;    
+            
   }
 }
 .watch {
   background-image: url("../img/watch-min.svg");
 }
-.tools {
+.itools {
   background-image: url("../img/tools-min.svg");
 }
 
@@ -594,8 +597,25 @@ button {
     }
     &:nth-child(2) {
       padding-left: 2px;
+      span {
+        background-color: #FFF;
+      }
     } 
   }  
+}
+
+.card-chars-table {
+  tr {
+    display: flex;
+  }
+  td {
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+   &:nth-child(2) {
+    text-align: right;    
+            flex: none;
+  }   
+}
 }
 
 .card-price-block {
@@ -851,8 +871,7 @@ button {
 .card-credit-content {}
 
 .card-tabs-row {
-  background: #F8F8F8;
-  margin-top: 51px;
+  background: #F8F8F8;  
 }
 
 .tabs-control {
@@ -862,7 +881,8 @@ button {
   flex-wrap: wrap;
   align-items: center;
   padding-right: 242px;
-          justify-content: space-between;
+  justify-content: space-between;
+  border-bottom: 3px solid #D4DADE;
   li {
     margin-right: 0;
     a {
@@ -889,14 +909,14 @@ button {
           height: 3px;
           width: calc(100% + 87px);
           position: absolute;
-          bottom: 0;
+          bottom: -3px;
           left: 0;
           background-color: #E36F2C;          
         }
       }      
     }
     + li {
-      
+
     }
   } 
 }
@@ -904,20 +924,13 @@ button {
   background: #F8F8F8;
 }
 
-
-
-
-
-
-
-
-
 .tabs_content {
   margin-top: 33px;
+  margin-bottom: 54px;
 }
 
 .ab {  
-  margin-bottom: 54px;
+  
 }
 
 
@@ -1198,10 +1211,10 @@ input[type="text"].try-input-date {
 }
 
 .adv-col-1-it-1 {
-  
+
 }
 .adv-col-1-it-2 {
-  
+
 }
 .adv-col-1-it {  
   background-repeat: no-repeat;
@@ -1296,7 +1309,7 @@ input[type="text"].try-input-date {
   max-width: 1644px;
   margin-left: auto;
   margin-right: auto;
-          justify-content: center;
+  justify-content: center;
 }
 
 .pos-sid-col {
@@ -1366,6 +1379,10 @@ input[type="text"].try-input-date {
   border-bottom: 1px solid rgb(41, 40, 45);
   padding-bottom: 5px;
   min-height: 44px;
+  padding-top: 10px;  
+  &:last-child {
+    border: none;
+  }
 }
 
 .pos-sid-adv-txt-1-span {
@@ -1432,6 +1449,8 @@ input[type="text"].try-input-date {
   flex-grow: 1;
   padding-top: 117px;
   max-width: 492px;
+  position: relative;
+  z-index: 3;
 }
 
 .call-back-form {
@@ -1501,16 +1520,16 @@ h2 {
 }
 
 .help-form-before {
-      content: "";
-      display: block;
-      z-index: 1;      
-      position: absolute;
-      right: -140px;
-      bottom: -110px;
-      width: 545px;
-      height: 576px;      
-      background-size: cover;
-    }
+  content: "";
+  display: block;
+  z-index: 1;      
+  position: absolute;
+  right: -140px;
+  bottom: -110px;
+  width: 545px;
+  height: 576px;      
+  background-size: cover;
+}
 
 .help-form-w {
   margin-top: 33px;
@@ -1518,8 +1537,7 @@ h2 {
   p {
     font-size: 22px;
     line-height: 151%;
-    margin-bottom: 32px;
-    background-color: #FFF;
+    margin-bottom: 32px;    
   }
   form {    
     border: 1px solid #DBDBDB;
@@ -1527,7 +1545,7 @@ h2 {
     padding: 38px 65px;
     box-shadow: 2px 2px 7px rgba(202, 202, 202, 0.65);
     border-radius: 5px;    
-      
+
   }
   .row7 {
     position: relative;
@@ -1557,6 +1575,10 @@ h2 {
 
 }
 
+  .show-1650 {
+    display: none;
+  }
+
 .footer-col-1 {
   width: 204px;
   margin-right: 101px;
@@ -1572,6 +1594,7 @@ h2 {
     font-size: 18px;
     line-height: 1.7;
     text-transform: uppercase;
+    text-decoration: underline;
   }
 }
 
@@ -1593,9 +1616,9 @@ h2 {
 }
 .footer-col-5 {
   display: flex;  
-          flex-direction: column;
-          -webkit-justify-content: flex-end;
-                  justify-content: flex-end;
+  flex-direction: column;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 .footer-col-6 {
   margin-left: auto;
@@ -1716,7 +1739,7 @@ h2 {
 }
 
 .copy {
-  font-size: 13px;
+  font-size: 14px;
   display: inline-block;
   margin-right: 121px;
 }
@@ -1727,14 +1750,22 @@ h2 {
   text-decoration-line: underline;
   &:not(:last-child) {
    margin-right: 50px; 
-  }  
+ }  
 }
 
 
+.footer-map-link {
+  color: #FFF;
+  font-size: 14px;
+  text-decoration: none;
+}
 
 
-
-
+.help-form-txts {
+  position: relative;
+  z-index: 3;
+  max-width: 1099px;
+}
 
 
 .reviews {
@@ -1804,7 +1835,9 @@ h2 {
     width: 25px;
     height: 25px;    
     background-size: 25px;
-    margin: 0 1.5px;
+    + .star {
+      margin-left: 2px;
+    }
   }
 }
 
@@ -1851,6 +1884,7 @@ h2 {
   text-transform: uppercase;
   margin-top: 13px;
   min-height: 35px;
+  text-decoration: underline;
   &:hover {
     text-decoration: none;
   }
@@ -1953,7 +1987,7 @@ h2 {
 .ui-datepicker-calendar {
   thead {
     td {
-      
+
     }
   }
 }
@@ -1983,13 +2017,13 @@ h2 {
 
 .ui-datepicker .ui-datepicker-title {
   display: flex;
--webkit-justify-content: center;
-          justify-content: center;  
-          align-items: center;
-          font-size: 16px;
-          text-transform: uppercase;
-          font-weight: 500;
-          font-family: 'Golos', sans-serif;
+  -webkit-justify-content: center;
+  justify-content: center;  
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Golos', sans-serif;
 }
 
 .ui-corner-all {
@@ -2013,16 +2047,16 @@ h2 {
     display: flex;    
     align-items: center;
     &:hover {
-      
-    
+
+
     }
   }
 }
 .ui-datepicker-prev,
 .ui-datepicker-next {
   display: flex;  
-          align-items: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .ui-widget.ui-widget-content {
@@ -2040,9 +2074,9 @@ h2 {
 }
 
 .ui-widget-content .ui-state-default {
-color: #8A8A8A;
-font-weight: 400;
-font-size: 10px;
+  color: #8A8A8A;
+  font-weight: 400;
+  font-size: 10px;
 
 }
 
@@ -2056,6 +2090,75 @@ font-size: 10px;
   .ui-icon {
     transform: rotate(180deg);
   }
+}
+
+
+
+.bpay {  
+  margin-top: 26px;
+  margin-bottom: 63px;  
+}
+
+
+h3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: rgb(41, 40, 45);
+  margin-bottom: 40px;
+}
+
+.bpay-txt strong {
+  display: block;
+}
+
+
+
+.bpay-w {
+  padding-top: 30px;
+  border-top: 1px solid #d6d6d6;
+}
+
+.bpay-row {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.bpay-col {
+  width: 20%;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid #E8E8E8;
+}
+
+.bpay-img-w {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  
+          align-items: flex-start;
+}
+
+.bpay-img {
+  max-width: 100%;
+}
+
+.bpay-txt {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.bpay-a {
+  color: rgb(227, 111, 44);
+  display: block;
+  margin-top: 15px;
+  white-space: nowrap;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 

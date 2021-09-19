@@ -1,4 +1,405 @@
 @media only screen and (max-width : 1650px) {  
+  .contain {
+    max-width: 1160px;
+  }
+
+  .header-w {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .header-form {
+    display: none;
+  }
+
+  .header-input-text {
+    width: 200px;
+  }
+
+  .header-call {
+    margin-left: unset;
+  }
+
+  .header-socials {
+    margin-left: unset;
+  }
+
+  .card {
+    margin-top: 29px;
+  }
+
+
+  .card-main {
+    margin-top: 26px;
+  }
+
+  .card-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .card-info-row--border {
+    .card-info-col-1, .card-info-col-2 {
+     padding-top: 2px; 
+   }    
+ }
+
+ .card-info-row.card-info-row--border {
+ }
+
+
+ .card-reviews {
+  padding-right: 19px;
+}
+
+.card-reviews-caption {
+  font-size: 12px;
+  margin-right: 7px;
+}
+.card-status {
+  margin-left: 18px;
+}
+.card-status,
+.card-info-link {
+  font-size: 12px;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  background-size: 15px;
+}
+
+.card-article {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+}
+.card-info-col-1 {
+  max-width: 459px;
+  margin-right: 0px;
+}
+.card-info-col-2 {
+  max-width: 319px;
+}
+.card-info-col-3 {
+  max-width: 300px;
+}
+.card-slide {
+  width: 395px;
+  height: 250px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-action {
+  height: 50px;
+  font-size: 16px;
+}
+
+.card-chars-caption {
+  font-size: 16px;
+}
+
+table.card-chars-table {
+  font-size: 14px;
+}
+
+.card-thumbs {
+  margin-right: 9px;  
+}
+.card-thumb + .card-thumb {
+  margin-top: 10px;
+}
+.card-thumb {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+  img {
+    max-width: 100%;
+  }
+}
+.card-price-block {
+  padding: 23px 30px 45px 30px;
+  height: auto;
+}
+.card-price-top {
+  padding: 11px;
+}
+.card-price {
+  margin-bottom: 26px;
+  b {
+    font-size: 26px;
+  }
+  span {
+
+  }
+}
+.card-btn {
+  height: 60px;
+  font-size: 18px;
+}
+.card-credit-arrow {
+  width: 32px;
+  height: 32px;  
+  background-size: 15px;
+}
+.card-credit-item {
+  padding-bottom: 18px;
+}
+.card-credit-item + .card-credit-item {
+  margin-top: 2px;
+}
+.card-credit-item-caption {
+  margin-bottom: 9px;
+}
+.card-info-row--product {  
+  align-items: flex-start;
+}
+.bpay {
+  margin-top: 23px;
+  margin-bottom: 44px;
+}
+.bpay-w {
+  padding-top: 42px;
+}
+.bpay-txt,
+.bpay-a {
+  font-size: 16px;
+}
+.bpay-a {
+  white-space: normal;
+}
+.bpay-img-w {
+  margin-bottom: 21px;
+}
+.tabs-control {
+  padding-right: 162px;
+  li {
+    + li {
+      margin-left: 14px;
+    }
+    a {
+      font-size: 20px;
+      padding: 39px 0 28px 0; 
+    }
+    &.active {
+      a {
+        font-size: 20px;
+        padding-bottom: 25px;
+        &:after {
+          width: calc(100% + 83px);
+        }
+      }
+    }
+  }
+}
+.ab-top-txt {
+  font-size: 18px;
+}
+.ab-d-col-1 {
+  padding-top: 23px;
+}
+.ab-w {
+  padding: 32px 50px 28px 50px;
+}
+.try {
+  padding-top: 54px;
+}
+.try-h {
+  font-size: 32px;
+}
+.try-txt {
+  font-size: 20px;
+}
+input[type="text"].input {
+  font-size: 14px;
+  padding: 0 25px;
+}
+.try-btn {
+  font-size: 14px;
+}
+.row7 {
+  margin: 0 -6.5px;
+  > div {
+    padding: 0 6.5px;
+  }
+} 
+.try-form-w {
+  padding: 44px 60px 44px 60px;
+}
+.pos-sid-h {
+  font-size: 32px;
+}
+.pos-sid-it-w {
+  max-width: 100%;    
+  margin-top: 46px;  
+}
+.pos-sid-col {
+  padding: 0 20px;
+}
+.call-back-form-after {
+  width: 902px;
+  height: 601px;    
+  background-size: 902px;
+}
+.call-back-form {
+  width: 400px;
+}
+.call-back-w {
+  padding: 39px 40px;
+}
+.call-back-txt {
+  font-size: 42px;
+  max-width: 183px;
+}
+.contain_call-back {
+  max-width: 1240px;
+  width: calc(100% - 30px);
+}
+.reviews {
+  padding-top: 53px;
+  padding-bottom: 58px;
+}
+h2 {
+  font-size: 32px;
+}
+.reviews-r {
+  width: 300px;
+}
+.rrating {
+  padding: 37px 34px 29px 40px;
+}
+.rrating-tit {
+  text-transform: lowercase;
+}
+.rrating-col-l {
+  .reviews-item-stars .star {
+    width: 20px;
+    height: 20px;    
+    background-size: 20px;
+  }  
+}
+.rrating-col-r {
+  font-size: 14px;
+}
+.reviews-item {
+  padding: 37px 30px 39px 43px;
+}
+.reviews-table-row {
+  margin-bottom: 23px;
+}
+.more-revs {
+  font-size: 20px;
+  &:after {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;                 
+    background-size: 18px;
+  }
+}
+.help {
+  padding-top: 65px;
+  padding-bottom: 77px;
+}
+.help-form-w form {
+  padding: 36px 56px;
+}
+.help-form-w p {
+  font-size: 20px;
+}
+.ornage-big {
+  text-transform: none;
+}
+.help-form-w {
+  .row7 {
+    margin: 0 -5px;
+    margin-top: 27px;
+    > .try-form-col {
+      padding: 0 5px;
+    }
+  }
+}
+.help-form-before {
+  width: 400px;
+  height: 422px;
+  bottom: 0;
+  right: -39px;
+}
+.help-form-txts {
+  max-width: 765px;
+  width: 100%;
+}
+.foot-mnu {
+  a {
+    font-size: 16px;
+  }
+}   
+.footer-row-1 {    
+  justify-content: space-between;
+  > div {
+    width: auto;
+    margin-right: unset;
+    margin-left: unset;
+  }
+  .footer-col-1 {
+    margin-right: 77px;
+  }
+}
+.foot-socs.show-1650 {
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+.hide-1650 {
+  display: none;
+}
+.show-1650 {
+  display: flex;
+}
+.footer-col-5 {    
+  justify-content: flex-start;
+}
+.footer-adress-it {
+  font-size: 14px;
+}
+.footer-logo {
+  width: 100px;
+  margin-right: 30px;
+}
+.footer-row-2 {
+  padding-top: 25px;
+}
+.rights {
+  font-size: 12px;
+  margin-bottom: 23px;
+} 
+.copy {
+  margin-right: 65px;
+}
+.bread-ul {
+  li {
+    margin-right: 6px;
+    &:after {
+      margin-left: 6px;
+    }
+  }
+  a {
+    font-size: 12px;
+  }
+  span {
+    font-size: 12px;
+  }
+}
+
+.card-info-link + .card-info-link {
+  margin-left: 40px;
+}
+.card-chars-table td {
+  padding-bottom: 20px;
+}
+.card-chars-table-item + .card-chars-table-item {
+  margin-top: 16px;
+}
 }
 @media only screen and (max-width : 1199px) {
   .contain {

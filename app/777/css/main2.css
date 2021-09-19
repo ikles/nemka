@@ -1,3 +1,6 @@
+.hide {
+  display: none !important;
+}
 .tools {
   border-radius: 5px;
   width: 400px;
