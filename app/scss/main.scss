@@ -966,14 +966,15 @@ button {
   font-size: 20px;
   line-height: 1.6;
   color: rgb(41, 40, 45);
+  b, strong {
+    font-weight: 600;
+  text-transform: uppercase;
+  }
 }
 
-.ab-top-txt-span {
-  line-height: 1.6;
-  margin-right: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+
+
+
 
 .ab-d {
   border-top: 1px solid rgb(214, 214, 214);

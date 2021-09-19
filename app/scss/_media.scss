@@ -201,7 +201,7 @@ table.card-chars-table {
   padding-top: 23px;
 }
 .ab-w {
-  padding: 32px 50px 28px 50px;
+  padding: 32px 50px 33px 50px;
 }
 .try {
   padding-top: 54px;
@@ -226,7 +226,7 @@ input[type="text"].input {
   }
 } 
 .try-form-w {
-  padding: 44px 60px 44px 60px;
+  padding: 44px 60px 39px 60px;
 }
 .pos-sid-h {
   font-size: 32px;
@@ -242,6 +242,7 @@ input[type="text"].input {
   width: 902px;
   height: 601px;    
   background-size: 902px;
+  right: -212px;
 }
 .call-back-form {
   width: 400px;
@@ -259,19 +260,26 @@ input[type="text"].input {
 }
 .reviews {
   padding-top: 53px;
-  padding-bottom: 58px;
+  padding-bottom: 49px;
 }
 h2 {
   font-size: 32px;
+  margin-bottom: 40px;
 }
 .reviews-r {
   width: 300px;
+  margin-left: 30px;
 }
 .rrating {
-  padding: 37px 34px 29px 40px;
+  padding: 39px 11px 29px 40px;
 }
-.rrating-tit {
-  text-transform: lowercase;
+
+.rrating-row {
+  margin-right: 20px;
+}
+.rrating-tit {  
+  text-transform: none;
+  margin-bottom: 11px;
 }
 .rrating-col-l {
   .reviews-item-stars .star {
@@ -287,7 +295,11 @@ h2 {
   padding: 37px 30px 39px 43px;
 }
 .reviews-table-row {
-  margin-bottom: 23px;
+  margin-bottom: 23px;  
+          align-items: flex-start;
+}
+.reviews-table {
+  margin-top: 32px;
 }
 .more-revs {
   font-size: 20px;
@@ -307,11 +319,13 @@ h2 {
 }
 .help-form-w p {
   font-size: 20px;
+  margin-bottom: 28px;
 }
 .ornage-big {
   text-transform: none;
 }
 .help-form-w {
+  margin-top: 46px;
   .row7 {
     margin: 0 -5px;
     margin-top: 27px;
@@ -334,20 +348,44 @@ h2 {
   a {
     font-size: 16px;
   }
+  li {
+    margin-bottom: 14px;
+  }
 }   
-.footer-row-1 {    
-  justify-content: space-between;
-  > div {
-    width: auto;
-    margin-right: unset;
-    margin-left: unset;
-  }
+
   .footer-col-1 {
-    margin-right: 77px;
+    width: 203px;    
+    margin-right: 31px;
+    flex: none;
   }
+  .footer-col-2 {
+    width: 234px;
+    flex: none;
+    margin-right: 31px;
+  }
+  .footer-col-3 {
+    width: 214px;
+    margin-right: 22px;
+    flex: none;
+  }
+.footer-col-4 {
+  width: 210px;
+  margin-right: 0;
+  flex: none;
 }
+.footer-col-5 {
+  margin-left: auto;
+  padding-right: 33px;
+}
+  .foot-mnu-2 {
+    margin-top: 21px;
+    li {
+      margin-bottom: 11px;
+    }
+  }
+
 .foot-socs.show-1650 {
-  margin-bottom: 14px;
+  margin-bottom: 21px;
   margin-top: 0;
 }
 .hide-1650 {
@@ -366,6 +404,9 @@ h2 {
   width: 100px;
   margin-right: 30px;
 }
+.footer-row-1 {
+  padding-bottom: 44px;
+}
 .footer-row-2 {
   padding-top: 25px;
 }
@@ -374,7 +415,8 @@ h2 {
   margin-bottom: 23px;
 } 
 .copy {
-  margin-right: 65px;
+  margin-right: 60px;
+  font-size: 13px;
 }
 .bread-ul {
   li {
@@ -399,6 +441,75 @@ h2 {
 }
 .card-chars-table-item + .card-chars-table-item {
   margin-top: 16px;
+}
+.ab-top-txt {  
+  b, strong {
+    text-transform: none;
+  }
+}
+.ab-top {
+  padding-bottom: 20px;
+}
+.ab-d-col-1 {
+  width: 50%;
+}
+.ab-d-col-2 {
+  width: 50%;
+  padding-top: 23px;
+}
+.ab-d-inf-ul li {
+  line-height: 1.4;
+}
+.tabs_content {
+  margin-bottom: 46px;
+}
+.try-txt {
+  margin-bottom: 22px;
+}
+.adv {
+  padding-top: 79px;
+  padding-bottom: 55px;
+}
+.adv-col-1 {
+  width: 37.4%;
+}
+.adv-col-2 {
+  width: 63.6%;
+}
+.adv-col-1-it {
+  padding-right: 27px;
+}
+.pos-sid-adv {
+  padding: 14px 29px 3px;
+}
+.pos-sid-adv-txt-1 {
+  padding-bottom: 8px;
+min-height: 57px;
+  letter-spacing: -0.3px;
+}
+.card-slide-arrow {
+  width: 44px;
+  right: 18px;
+  bottom: 14px;
+  background-position: right center;
+}
+
+.pos-sid-adv-txt-11 {
+  height: auto;
+  padding: 10px 0;
+  min-height: auto;
+}
+.call-back {
+  margin-top: 69px;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.rrating-btn {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.footer {
+  padding-top: 34px;
 }
 }
 @media only screen and (max-width : 1199px) {
