@@ -96,9 +96,7 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  padding: 0 15px;  
-  box-sizing: content-box;
+  width: 100%;  
 }
 
 
@@ -712,7 +710,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  display: none !important;
+  display: none;
   z-index: 10;
 }
 .card-fixed-row-w {
@@ -1039,6 +1037,17 @@ button {
   display: flex;          
   justify-content: center;            
   align-items: center;
+  background-image: url('../img/video-fon-1.jpg');
+}
+
+.video__play {
+ display: block;
+ width: 90px;
+ height: 90px;
+ position: absolute;
+ background-color: #FFF; 
+ background: url("../img/play.svg") $nr center; 
+         background-size: cover;
 }
 
 .vid-a {
@@ -1212,10 +1221,10 @@ input[type="text"].try-input-date {
 }
 
 .adv-col-1-it-1 {
-
+background-image: url('../img/adv-1.jpg');
 }
 .adv-col-1-it-2 {
-
+background-image: url('../img/adv-2.jpg');
 }
 .adv-col-1-it {  
   background-repeat: no-repeat;
@@ -1446,7 +1455,7 @@ input[type="text"].try-input-date {
   font-size: 48px;
   line-height: 1.2;
   color: rgb(51, 71, 82);
-  width: 4922px;
+  width: 100%;
   flex-grow: 1;
   padding-top: 117px;
   max-width: 492px;
@@ -1471,6 +1480,14 @@ input[type="text"].try-input-date {
   border: 1px solid #DBDBDB;  
   border-radius: 5px;
   position: relative;
+}
+
+.call-back-form-w {
+  z-index: 3;
+}
+
+.more-revs-items-block {
+  display: none;
 }
 
 .call-back-form-after {
@@ -1618,13 +1635,12 @@ h2 {
 .footer-col-5 {
   display: flex;  
   flex-direction: column;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
+  padding-top: 43px;  
 }
 .footer-col-6 {
   margin-left: auto;
   padding-top: 40px;
-  width: 103px;
+  width: 125px;
 }
 
 .foot-mnu-2 {
@@ -1693,9 +1709,18 @@ h2 {
   display: block;
 }
 
+
+
 .foot-socs {
   display: flex;
   margin-top: 22px;
+  min-width: 100%;  
+          flex-wrap: wrap;          
+                  justify-content: flex-end;                  
+                          
+  &.show-1650 {
+    display: none;
+  }
 }
 
 .foot-soc {
@@ -1705,6 +1730,7 @@ h2 {
   width: 27px;
   height: 27px;
   margin-right: 14px;
+  margin-bottom: 23px;
 }
 
 .footer-row-2 {
@@ -1799,6 +1825,11 @@ h2 {
   display: flex;  
   justify-content: flex-start;
 }
+.reviews-name-date-stars {
+  display: flex;
+  width: 100%;
+          justify-content: space-between;
+}
 
 .reviews-img-w {
   width: 101px;
@@ -1808,6 +1839,8 @@ h2 {
   justify-content: center;
   margin-right: 31px;
   flex: 0 0 auto;
+  border: 1px solid #334752;
+  overflow: hidden;
 }
 
 .reviews-name-date {
@@ -1991,7 +2024,18 @@ h2 {
 
     }
   }
+  tbody {
+    td {
+      + td {
+        .ui-widget-content {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
 }
+
+
 
 .ui-datepicker {
   z-index: 5 !important;
@@ -2003,10 +2047,33 @@ h2 {
 
 .ui-widget-content .ui-state-default {
   font-weight: 700;
+  margin-bottom: 5px;  
+  display: inline-flex;  
+          align-items: center;
+          padding-left: 8px; 
+          &:hover {
+    color: #fff;
+    border-radius: 3px;    
+    background-color: #3E8A74;        
+          }
   &.ui-state-active {
-    color: #ccc;
+    color: #fff;
+    border-radius: 3px;
+      
+    background-color: #3E8A74;
   }
 }
+.ui-widget.ui-widget-content {
+  width: 344px;
+}
+.ui-datepicker th {
+  text-align: left;
+  font-weight: 600 $i;
+}
+.ui-state-default .ui-state-default, .ui-widget-content .ui-state-default {
+  width: 30px;
+  height: 20px;
+  text-align: left;}
 
 .ui-datepicker .ui-datepicker-header {
   background-color: #FFF;

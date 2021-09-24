@@ -1,103 +1,46 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <!--meta name="viewport" content="width=1920px"-->
-  <title>Const</title>        
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>        
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main1.css">
-  <link rel="stylesheet" href="css/main2.css">
-  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
-<body>  
+<body>
 
-  <style>  
-
-
-
-  html {
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-  }
-
-  .wrapper {
-    width: 1300px;          
-    font-weight: 400;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Mazzard M', sans-serif;      
-  }
-  .contain {  
-    margin-right: auto;
-    margin-left: auto;
-      /*
-      width: 1170px;*/
-      /*1199*/
-      width: 1160px 
-
-      /*992
-      width: 708px 
-      */
-
-      /*570
-      width: 100%
-      padding-left: 20px
-      padding-right: 20px
-      */
-    }
-
-
-
-
-    .bottom-wrap {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding-bottom: 50px;
-    }
-
-
-
-
-
-  </style>
-
-  <script>
-
-    let project = document.querySelector('title').textContent;
-    console.log(project)
-  </script>
-
-
-
-
-  
-  <div class="wrapper bord">
-
-   <header class="header">
+  <div class="wrapper">  
+    <header class="header">
       <div class="contain">
-        <div class="header-w" style="justify-content: space-between; display: flex;">
+        <div class="header-w">
           <div class="header-menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <a href="index.html" class="header-logo">
-            <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="109px" height="75px" viewBox="0 0 109 75" enable-background="new 0 0 109 75" xml:space="preserve"> 
+            <svg version="1.1" id="Слой_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="109px" height="75px" viewBox="0 0 109 75" enable-background="new 0 0 109 75" xml:space="preserve"> 
               <path fill-rule="evenodd" clip-rule="evenodd" fill="#1A171B" d="M0,62.552V37.13h5.138v10.002h10.055V37.13h5.132v25.421h-5.132 V51.437H5.138v11.115H0L0,62.552z M38.525,21.315L57.121,2.171l1.642-1.688l1.789,1.541l41.795,36.007l4.053,3.812l-7.326-0.029 L59.068,7.349L45.501,21.315H38.525L38.525,21.315z M58.514,35.812L58.514,35.812l8.204-0.01c-0.375-1.615-2.044-3.734-4.032-5.489 c-2.992-2.273-6.416-3.809-10-4.553c-3.578-0.742-7.319-0.695-10.957,0.197c-6.674,1.638-12.054,5.826-15.355,11.273 c-3.3,5.445-4.525,12.144-2.891,18.804c1.637,6.675,5.825,12.054,11.272,15.354c5.445,3.301,12.145,4.524,18.805,2.892 c2.365-0.58,4.598-1.483,6.633-2.672c2.041-1.192,3.924-2.688,5.58-4.452l1.467-1.58c-3.105,0.096-7.128,0.072-10.542,0.046 c-1.504,0.878-3.107,1.534-4.764,1.939c-4.827,1.185-9.673,0.305-13.603-2.077c-3.929-2.381-6.949-6.262-8.13-11.075 c-1.185-4.827-0.303-9.674,2.078-13.604c2.381-3.929,6.261-6.949,11.075-8.131c2.639-0.647,5.354-0.681,7.95-0.143 C53.891,33.069,56.358,34.175,58.514,35.812L58.514,35.812z M45.467,44.138L45.467,44.138h6.037L56.08,56.97l4.611-12.832h6.019 v18.414h-4.143V50.429l-4.493,12.123h-4.161l-4.285-12.123v12.123h-4.161V44.138L45.467,44.138z M71.008,37.13v25.421h5.132V51.418 c0.869,0.012,1.515,0.172,1.935,0.485s0.965,1.096,1.621,2.345c0.368,0.704,0.587,1.101,0.64,1.196 c0.153,0.265,0.248,0.443,0.296,0.536l3.036,6.571h6.031l-3.469-6.973c-0.887-1.787-1.704-3.178-2.45-4.161 c-0.746-0.982-1.693-1.633-2.835-1.959c0.923-0.521,1.568-1.077,1.936-1.663c0.362-0.592,0.698-1.326,1.012-2.201 c0.593-1.657,1.037-2.747,1.338-3.28c0.296-0.533,0.693-0.929,1.178-1.189c0.486-0.261,1.254-0.39,2.303-0.39l0.728,0.018v-3.794 c-0.377,0.012-0.626,0.018-0.747,0.018c-2.365,0-4.083,0.331-5.147,1.005c-1.071,0.669-2.143,2.379-3.208,5.132 c-0.84,2.16-1.469,3.48-1.87,3.954c-0.403,0.474-1.178,0.769-2.325,0.882V37.13H71.008L71.008,37.13L71.008,37.13z M96.636,49.755 L96.636,49.755l-4.422-0.8c0.498-1.781,1.35-3.094,2.562-3.954c1.22-0.851,3.02-1.282,5.41-1.282c2.179,0,3.796,0.261,4.859,0.774 c1.061,0.515,1.812,1.167,2.243,1.958c0.432,0.795,0.652,2.244,0.652,4.363l-0.053,5.688c0,1.616,0.075,2.813,0.235,3.582 c0.153,0.763,0.451,1.592,0.877,2.468h-4.824c-0.125-0.326-0.284-0.806-0.467-1.439c-0.078-0.289-0.139-0.479-0.171-0.572 c-0.837,0.81-1.724,1.413-2.672,1.821c-0.947,0.403-1.959,0.604-3.036,0.604c-1.893,0-3.391-0.516-4.48-1.539 c-1.095-1.03-1.64-2.331-1.64-3.906c0-1.036,0.249-1.966,0.747-2.781c0.496-0.817,1.194-1.439,2.089-1.871 c0.894-0.433,2.19-0.812,3.877-1.137c2.272-0.426,3.853-0.829,4.728-1.194v-0.485c0-0.941-0.229-1.604-0.69-2.008 c-0.463-0.396-1.333-0.598-2.616-0.598c-0.872,0-1.545,0.172-2.031,0.516C97.328,48.299,96.938,48.896,96.636,49.755L96.636,49.755z M103.15,53.709L103.15,53.709c-0.62,0.207-1.608,0.456-2.965,0.745c-1.348,0.291-2.231,0.573-2.651,0.847 c-0.632,0.456-0.953,1.024-0.953,1.717c0,0.687,0.255,1.272,0.765,1.77s1.153,0.746,1.941,0.746c0.881,0,1.716-0.291,2.516-0.864 c0.591-0.438,0.977-0.978,1.159-1.615c0.13-0.415,0.188-1.208,0.188-2.374V53.709z"></path> <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M43.08,53.752H22.398v-7.706H43.08V53.752L43.08,53.752z M43.08,44.12L43.08,44.12H22.398v-7.705H43.08V44.12L43.08,44.12z M43.08,63.381L43.08,63.381H22.398v-7.703H43.08V63.381z"></path> <g> <rect x="23.149" y="46.797" fill-rule="evenodd" clip-rule="evenodd" fill="#E1001A" width="19.18" height="6.203"></rect> <rect x="23.149" y="37.166" fill-rule="evenodd" clip-rule="evenodd" fill="#1A171B" width="19.18" height="6.202"></rect> <rect x="23.149" y="56.428" fill-rule="evenodd" clip-rule="evenodd" fill="#FFE400" width="19.18" height="6.202"></rect> </g>
             </svg>
             <span>За высокую культуру строительства</span>
           </a>
-          <form class="header-form" style="display: none;">
-            <input class="header-input-text" name="search" type="text" placeholder="Введите название товара" style="width: 200px;">
+          <form class="header-form">
+            <input class="header-input-text" name="search" type="text" placeholder="Введите название товара" />
             <button class="header-btn"><i></i>каталог</button>
           </form> 
           <div class="header-actions">
             <a href="#" class="header-action">
-              <svg class="icon">
+              <svg class="icon" href="img/user.svg">
                 <use xlink:href="img/sprite.svg#user"></use>
               </svg>
               <svg class="icon icon-hover">
@@ -129,11 +72,11 @@
               </svg>
             </a>
           </div><!--header-actions-->       
-          <div class="header-call" style="margin-left: unset;">
+          <div class="header-call">
             <a href="tel:+74991166712" class="header-phone">+7 (499) 116-67-12</a>
             <a href="#" class="header-callback js-top-callback">Перезвоните мне</a>
           </div>
-          <div class="header-socials" style="margin-left: unset;">
+          <div class="header-socials">
             <a href="#" class="header-social-btn">
               <svg class="icon">
                 <use xlink:href="img/sprite.svg#whatss"></use>
@@ -149,7 +92,7 @@
       </div>
     </header>
 
-    <div class="card" style="margin-top: 29px;">
+    <div class="card">
       <div class="contain">
         <ul class="bread-ul">
           <li><a href="#">Главная</a></li>
@@ -158,13 +101,13 @@
           <li><a href="#">Штукатурные станции</a></li>
           <li><span>Штукатурная станция Kaleta 4/230</span></li>
         </ul>
-        <div class="card-main" style="margin-top: 38px;">
-          <h1 class="card-title" style="font-size: 28px;">Штукатурная станция Kaleta 4/230</h1>
+        <div class="card-main">
+          <h1 class="card-title">Штукатурная станция Kaleta 4/230</h1>
           <div class="card-info-row card-info-row--border">
             <div class="card-info-col-1">
               <div class="card-info">
                 <div class="card-reviews">
-                  <div class="card-reviews-caption" style="font-size: 12px;">2 отзыва</div>
+                  <div class="card-reviews-caption">2 отзыва</div>
                   <div class="stars">
                     <span class="star"></span>
                     <span class="star"></span>
@@ -186,26 +129,26 @@
             </div><!--card-info-col-2-->
 
             <div class="card-info-col-3">
-              <div class="card-actions">
+              <div class="card-actions hide-768">
                 <a href="#" class="card-action"><i class="watch"></i>Отложить</a>
-                <a href="#" class="card-action"><i class="tools"></i>Сравнить</a>
+                <a href="#" class="card-action"><i class="itools"></i>Сравнить</a>
               </div><!--card-actions-->
             </div><!--card-info-col-3-->
           </div><!--card-info-row-->
 
           <div class="card-info-row card-info-row--product">
             <div class="card-info-col-1">
-              <div class="card-slider slider-pro">
+              <div class="card-slider slider-pro" id="example4">
                 <div class="card-thumbs sp-thumbnails">
-                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png"></a>
-                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png"></a>
-                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png"></a>
-                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png" class="sp-thumbnail"></a>
+                  <a href="img/product-slide-big.png" class="card-thumb"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/product-slide-1.png" class="sp-thumbnail"></a>
                 </div> 
                 <div class="card-slides sp-slides">
                   <div class="card-slide sp-slide">
                     <a data-fancybox="gallery-1" href="img/product-slide-big.png">
-                      <img class="card-slide-image sp-image lazy" alt="image" title="image" src="img/pixel.gif" data-src="img/product-slide-big.png">
+                      <img class="card-slide-image sp-image lazy" alt="image" title="image" src="img/pixel.gif" data-src="img/product-slide-big.png" alt="">
                     </a>                    
                     <a href="#" class="card-slide-arrow"></a>
                   </div>
@@ -217,7 +160,7 @@
               <div class="card-chars-table-item">
                 <div class="card-chars-caption">Ключевые характеристики:</div>
                 <table class="card-chars-table">
-                  <tbody><tr>
+                  <tr>
                     <td><div class="dots"><span>Вместимость загрузочного бункера, л</span></div></td>
                     <td>2</td>
                   </tr>
@@ -238,12 +181,12 @@
                     <td><div class="dots"><span>Двигатель насоса</span></div></td>
                     <td>3.5кВт</td>
                   </tr>
-                </tbody></table>
+                </table>
               </div>
               <div class="card-chars-table-item">
                 <div class="card-chars-caption">Виды выполняемых работ:</div>
                 <table class="card-chars-table">
-                  <tbody><tr>
+                  <tr>
                     <td>Штукатурка стен внутри и снаружи</td>
                     <td></td>
                   </tr>
@@ -255,7 +198,7 @@
                     <td>Устройство самовыравнивающихся стяжек</td>
                     <td></td>
                   </tr>
-                </tbody></table>
+                </table>
               </div>
             </div><!--card-info-col-2-->
             <div class="card-info-col-3">
@@ -266,7 +209,11 @@
                     <span>цена с НДС</span>
                   </div>
                   <a href="#" class="card-btn btn">Купить</a>
-                </div>                
+                </div> 
+                <div class="card-actions show-768">
+                  <a href="#" class="card-action"><i class="watch"></i>Отложить</a>
+                  <a href="#" class="card-action"><i class="itools"></i>Сравнить</a>
+                </div><!--card-actions-->              
                 <a href="#" class="card-credit-item">                
                   <span class="card-credit-arrow"></span>
                   <span class="card-credit-content">
@@ -296,7 +243,7 @@
               <div class="card-fixed-l">
                 <div class="card-fixed-prod-info">
                   <div class="card-fixed-info-l">
-                    <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/card-fix.png">
+                    <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/card-fix.png" alt="">
                   </div>
                   <div class="card-fixed-info-r">
                     <div class="card-fixed-tit">Штукатурная станция Kaleta 4/230</div>
@@ -325,7 +272,7 @@
                 <a href="#" class="card-fixed-btn btn">Купить</a>
                 <div class="card-fixed-actions">
                   <a href="#" class="card-action"><i class="watch"></i>Отложить</a>
-                  <a href="#" class="card-action"><i class="tools"></i>Сравнить</a>
+                  <a href="#" class="card-action"><i class="itools"></i>Сравнить</a>
                 </div><!--card-fixed-actions-->
               </div><!--card-fixed-r-->
             </div><!--card-fixed-row-->
@@ -372,27 +319,27 @@
             <h3>ОПЛАТА И ДОСТАВКА:</h3>
             <div class="bpay-row">
               <div class="bpay-col">
-                <div class="bpay-img-w"><img src="img/bpay-1.svg" class="bpay-img"></div>
+                <div class="bpay-img-w"><img src="img/bpay-1.svg" class="bpay-img" /></div>
                 <p class="bpay-txt"><strong>Наличными</strong>при получении заказа</p>
               </div>
               <div class="bpay-col">
-                <div class="bpay-img-w"><img src="img/bpay-2.svg" class="bpay-img"></div>
+                <div class="bpay-img-w"><img src="img/bpay-2.svg" class="bpay-img" /></div>
                 <p class="bpay-txt"><strong>Безналичная оплата</strong> по выставленному счету</p>
               </div>
               <div class="bpay-col">
-                <div class="bpay-img-w"><img src="img/bpay-3.svg" class="bpay-img"></div>
+                <div class="bpay-img-w"><img src="img/bpay-3.svg" class="bpay-img" /></div>
                 <p class="bpay-txt"><strong>Безналичная оплата</strong> по Договору</p>
               </div>
               <div class="bpay-col">
-                <div class="bpay-img-w"><img src="img/bpay-4.svg" class="bpay-img"></div>
+                <div class="bpay-img-w"><img src="img/bpay-4.svg" class="bpay-img" /></div>
                 <p class="bpay-txt"><b>Наличными и банковской картой</b> VISA/MasterCard в офисе продаж</p>
               </div>
               <div class="bpay-col">
-                <div class="bpay-img-w"><img src="img/bpay-5.svg" class="bpay-img"></div>
+                <div class="bpay-img-w"><img src="img/bpay-5.svg" class="bpay-img" /></div>
                 <p class="bpay-txt">
                   Москва + 20 км.
 
-                  <a class="bpay-a">См. таблицу расчета cтоимости</a>
+                  <a href="#" class="bpay-a">См. таблицу расчета cтоимости</a>
                 </p>
               </div>
             </div>
@@ -406,6 +353,9 @@
       <div class="card-tabs-row">
         <div class="contain">
           <div class="tabs-control-row">
+            <div class="tabs-active-pda show-570">
+              Описание товара
+            </div>
             <ul class="tabs-control tabs-control-1">
               <li class="tabs_control_item active">
                 <a href="#" class="tabs_control_link">
@@ -445,7 +395,7 @@
                   <div class="ab-w-2">
                     <div class="ab-top">
                       <div class="ab-top-img"><img alt="image" title="image" src="img/bulb.svg"></div>
-                      <div class="ab-top-txt"><span class="ab-top-txt-span">Штукатурная станция Kaleta-4</span>предназначена для механического нанесения штукатурки непрерывным способом, используя готовые сухие строительные смеси. Работает от однофазной электросети 220В, применяется бригадами на небольших объетах: квартиры, коттеджи.</div>
+                      <div class="ab-top-txt"><b>Штукатурная станция Kaleta-4</b> предназначена для механического нанесения штукатурки непрерывным способом, используя готовые сухие строительные смеси. Работает от однофазной электросети 220В, применяется бригадами на небольших объетах: квартиры, коттеджи.</div>
                     </div>
                     <div class="ab-d">
                       <div class="ab-d-col-1">
@@ -491,9 +441,12 @@
     </div><!--card-->
 
 
-    <div class="vid lazy" data-src="img/video-fon-1.jpg">
-      <a href="#" class="vid-a">video</a>
-    </div>
+
+    <div class="vid video js-video" data-youtube="sfkmJ0O_-o0">
+      <a href="#" id="video__play" class="video__play video__button"></a>
+    </div>  
+
+    
 
 
 
@@ -509,9 +462,9 @@
             </div>
             <form class="try-w-form">
               <div class="try-form-row row7">
-                <div class="try-form-col col-25"><input class="input try-input-text try-input-name" type="text" placeholder="Имя"></div>
-                <div class="try-form-col col-25"><input class="input try-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37"></div>
-                <div class="try-form-col col-25"><input class="input try-input-text try-input-date" type="text" placeholder="2021-09-09"></div>
+                <div class="try-form-col col-25"><input class="input try-input-text try-input-name" type="text" placeholder="Имя" /></div>
+                <div class="try-form-col col-25"><input class="input try-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37" /></div>
+                <div class="try-form-col col-25"><input class="input try-input-text try-input-date" type="text" placeholder="2021-09-09" /></div>
                 <div class="try-form-col col-25"><button class="try-btn btn">Записаться на посещение</button></div>
               </div>                                        
             </form>
@@ -522,10 +475,9 @@
     <div class="adv">
       <div class="adv-row">
         <div class="adv-col-1">
-          <div class="adv-col-1-it adv-col-1-it-1 lazy" data-src="img/adv-1.jpg">
+          <div class="adv-col-1-it adv-col-1-it-1">
             <div class="adv-col-1-txt">
-              Гарантия<br>
-              и сервис
+              Гарантия и сервис
             </div>
           </div>
         </div>
@@ -542,7 +494,7 @@
       <div class="adv-row">
         <div class="adv-col-1">
 
-          <div class="adv-col-1-it adv-col-1-it-2 lazy" data-src="img/adv-2.jpg">
+          <div class="adv-col-1-it adv-col-1-it-2">
             <div class="adv-col-1-txt">Обучение в подарок</div></div>
           </div>
           <div class="adv-col-2">
@@ -575,8 +527,8 @@
                         <div class="pos-sid-adv-txt-3">+2.640.000 рублей в год</div>
                       </div>
                       <div class="pos-sid-adv-txt-4">
-                        22 рабочих смены в месяц, <br>
-                        150 рублей за кв.м., <br>
+                        22 рабочих смены в месяц, <br />
+                        150 рублей за кв.м., <br />
                         150 кв. м. в смену
                       </div>
                     </div>
@@ -595,8 +547,8 @@
                         <div class="pos-sid-adv-txt-3">+792.000 руб/год x кол-во машин</div>
                       </div>
                       <div class="pos-sid-adv-txt-4">
-                        22 рабочих смены в месяц, <br>
-                        150 рублей за кв.м., <br>
+                        22 рабочих смены в месяц, <br />
+                        150 рублей за кв.м., <br />
                         150 кв. м. в смену
                       </div>
                     </div>
@@ -613,12 +565,14 @@
                         <span class="pos-sid-adv-txt-1-span">0 рублей</span>
                         <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">стоимость обучения бригады при покупке</div></div>
                       </div>
-                      <div class="pos-sid-adv-txt-1"><span class="pos-sid-adv-txt-1-span">24 месяца гарантии</span></div>
-                      <div class="pos-sid-adv-txt-1">
+                      <div class="pos-sid-adv-txt-1 pos-sid-adv-txt-11">
+                        <span class="pos-sid-adv-txt-1-span">24 месяца гарантии</span>
+                      </div>
+                      <div class="pos-sid-adv-txt-1 pos-sid-adv-txt-11">
                         <span class="pos-sid-adv-txt-1-span">30 дней</span>
                         <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">отсрочки первого взноса по кредиту Tinkoff</div></div>
                       </div>
-                      <div class="pos-sid-adv-txt-1">
+                      <div class="pos-sid-adv-txt-1 pos-sid-adv-txt-11">
                         <span class="pos-sid-adv-txt-1-span">24 часа</span>
                         <div class="pos-sid-adv-txt-2-w"><div class="pos-sid-adv-txt-2">срок поставки подменного оборудования</div></div>
                       </div>
@@ -634,16 +588,18 @@
 
 
       <div class="call-back">
-        <div class="contain">
+        <div class="contain contain_call-back">
           <div class="call-back-w lazy" data-src="img/call-back-bg.jpg">
             <div class="call-back-txt">ДАВАЙТЕ, МЫ ВАМ ПЕРЕЗВОНИМ!</div>
             <div class="call-back-form-after lazy" data-src="img/phone-form-bg.png"></div>
-            <form class="call-back-form">
-              <input class="input call-input-text try-input-name" type="text" placeholder="Имя">
-              <input class="input call-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37">
-              <input class="input call-input-text try-input-date" type="text" placeholder="2021-09-09">
-              <button class="call-btn btn">Записаться на посещение</button>
-            </form>
+            <div class="call-back-form-w">
+              <form class="call-back-form">
+                <input class="input call-input-text try-input-name" type="text" placeholder="Имя" />
+                <input class="input call-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37" />
+                <input class="input call-input-text try-input-date" type="text" placeholder="2021-09-09" />
+                <button class="call-btn btn">Записаться на посещение</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -659,17 +615,21 @@
               <div class="reviews-item">
                 <div class="reviews-item-row-1">
                   <div class="reviews-img-w"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/rev-ava.jpg"></div>
-                  <div class="reviews-name-date">
-                    <div class="reviews-name">Максим лаврентьев</div>
-                    <div class="reviews-date">27.08.2021</div>
+                  
+                  <div class="reviews-name-date-stars">
+                    <div class="reviews-name-date">
+                      <div class="reviews-name">Максим лаврентьев</div>
+                      <div class="reviews-date">27.08.2021</div>
+                    </div>
+                    <div class="stars reviews-item-stars">                
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star star-o"></span>
+                      <span class="star star-o"></span>                  
+                    </div>
                   </div>
-                  <div class="stars reviews-item-stars">                
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star"></span>
-                    <span class="star star-o"></span>
-                    <span class="star star-o"></span>                  
-                  </div>
+
                 </div>
                 <div class="reviews-table">
                   <div class="reviews-table-row">
@@ -689,16 +649,18 @@
               <div class="reviews-item">
                 <div class="reviews-item-row-1">
                   <div class="reviews-img-w"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/rev-ava.jpg"></div>
-                  <div class="reviews-name-date">
-                    <div class="reviews-name">Максим лаврентьев</div>
-                    <div class="reviews-date">27.08.2021</div>
-                  </div>
-                  <div class="stars reviews-item-stars">                
-                    <span class="star star-green"></span>
-                    <span class="star star-green"></span>
-                    <span class="star star-green"></span>
-                    <span class="star star-o"></span>
-                    <span class="star star-o"></span>                  
+                  <div class="reviews-name-date-stars">
+                    <div class="reviews-name-date">
+                      <div class="reviews-name">Максим лаврентьев</div>
+                      <div class="reviews-date">27.08.2021</div>
+                    </div>
+                    <div class="stars reviews-item-stars">                
+                      <span class="star star-green"></span>
+                      <span class="star star-green"></span>
+                      <span class="star star-green"></span>
+                      <span class="star star-o"></span>
+                      <span class="star star-o"></span>                  
+                    </div>
                   </div>
                 </div>
                 <div class="reviews-table">
@@ -715,7 +677,140 @@
                     <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
                   </div>
                 </div>
-              </div><a href="#" class="more-revs">поСмотреть больше отзывов</a>
+              </div>
+              <a href="#" class="more-revs">поСмотреть больше отзывов</a>
+              <div class="more-revs-items-block">
+                
+                <div class="reviews-item">
+                  <div class="reviews-item-row-1">
+                    <div class="reviews-img-w"><img alt="image" title="image" src="img/rev-ava.jpg"></div>
+                    <div class="reviews-name-date-stars">
+                      <div class="reviews-name-date">
+                        <div class="reviews-name">Максим лаврентьев</div>
+                        <div class="reviews-date">27.08.2021</div>
+                      </div>
+                      <div class="stars reviews-item-stars">                
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-o"></span>
+                        <span class="star star-o"></span>                  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-table">
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Достоинства:</div>
+                      <div class="reviews-table-col-2">Крепкая конструкция. Соотношение цена-качество. Простая в управлении и уходе.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Недостатки:</div>
+                      <div class="reviews-table-col-2">Родной шнек проходил долго, дополнительные быстровато вылетели.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Комментарий:</div>
+                      <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item-row-1">
+                    <div class="reviews-img-w"><img alt="image" title="image" src="img/rev-ava.jpg"></div>
+                    <div class="reviews-name-date-stars">
+                      <div class="reviews-name-date">
+                        <div class="reviews-name">Максим лаврентьев</div>
+                        <div class="reviews-date">27.08.2021</div>
+                      </div>
+                      <div class="stars reviews-item-stars">                
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-o"></span>
+                        <span class="star star-o"></span>                  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-table">
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Достоинства:</div>
+                      <div class="reviews-table-col-2">Крепкая конструкция. Соотношение цена-качество. Простая в управлении и уходе.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Недостатки:</div>
+                      <div class="reviews-table-col-2">Родной шнек проходил долго, дополнительные быстровато вылетели.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Комментарий:</div>
+                      <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item-row-1">
+                    <div class="reviews-img-w"><img alt="image" title="image" src="img/rev-ava.jpg"></div>
+                    <div class="reviews-name-date-stars">
+                      <div class="reviews-name-date">
+                        <div class="reviews-name">Максим лаврентьев</div>
+                        <div class="reviews-date">27.08.2021</div>
+                      </div>
+                      <div class="stars reviews-item-stars">                
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-o"></span>
+                        <span class="star star-o"></span>                  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-table">
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Достоинства:</div>
+                      <div class="reviews-table-col-2">Крепкая конструкция. Соотношение цена-качество. Простая в управлении и уходе.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Недостатки:</div>
+                      <div class="reviews-table-col-2">Родной шнек проходил долго, дополнительные быстровато вылетели.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Комментарий:</div>
+                      <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item-row-1">
+                    <div class="reviews-img-w"><img alt="image" title="image" src="img/rev-ava.jpg"></div>
+                    <div class="reviews-name-date-stars">
+                      <div class="reviews-name-date">
+                        <div class="reviews-name">Максим лаврентьев</div>
+                        <div class="reviews-date">27.08.2021</div>
+                      </div>
+                      <div class="stars reviews-item-stars">                
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-green"></span>
+                        <span class="star star-o"></span>
+                        <span class="star star-o"></span>                  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-table">
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Достоинства:</div>
+                      <div class="reviews-table-col-2">Крепкая конструкция. Соотношение цена-качество. Простая в управлении и уходе.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Недостатки:</div>
+                      <div class="reviews-table-col-2">Родной шнек проходил долго, дополнительные быстровато вылетели.</div>
+                    </div>
+                    <div class="reviews-table-row">
+                      <div class="reviews-table-col-1">Комментарий:</div>
+                      <div class="reviews-table-col-2">И гипс и цемент тянет хорошо. Ребята работают никаких проблем.</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div><!--more-revs-items-block-->
             </div>
             <div class="reviews-r">
               <div class="rrating">
@@ -770,15 +865,15 @@
         <div class="help-form-w">
           <div class="help-form-before lazy" data-src="img/man.png"></div>
           <form>        
-            <p><span class="ornage-big">Воспользуйтесь экспертной консультацией</span> нашего менеджера. <br>
-            Более 10 лет мы изучаем и формируем рынок штукатурной техники.</p>
-
-            <p><span class="ornage-big">Закажите обратный звонок</span> и уже через несколько минут наш менеджер свяжется с Вами. <br>
-            Мы поможем Вам найти самое эффективное решение малой механизации строительных процессов.</p>
+            <div class="help-form-txts">
+              <p><span class="ornage-big">Воспользуйтесь экспертной консультацией</span> нашего менеджера. 
+              Более 10 лет мы изучаем и формируем рынок штукатурной техники.</p>
+              <p><span class="ornage-big">Закажите обратный звонок</span> и уже через несколько минут наш менеджер свяжется с Вами. 
+              Мы поможем Вам найти самое эффективное решение малой механизации строительных процессов.</p>
+            </div>
             <div class="help-form-row row7">
               <div class="try-form-col col-25"><input class="input try-input-text try-input-name" type="text" placeholder="Имя"></div>
-              <div class="try-form-col col-25"><input class="input try-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37"></div>
-              <div class="try-form-col col-25"><input class="input try-input-text try-input-date" type="text" placeholder="2021-09-09"></div>
+              <div class="try-form-col col-25"><input class="input try-input-text try-input-tel" type="text" placeholder="+7 (919) 567 - 68 -37"></div>              
               <div class="try-form-col col-25"><button class="try-btn btn">Заказать звонок</button></div>
             </div>
           </form>
@@ -812,7 +907,7 @@
           </div>
           <div class="footer-col-3">
             <ul class="foot-mnu">
-              <li><a href="#">блог</a></li>
+              <li><a href="#">Каталог</a></li>
             </ul>
             <ul class="foot-mnu-2">
               <li><a href="#">Оборудование</a></li>
@@ -830,10 +925,19 @@
             </ul>
           </div>
           <div class="footer-col-5">
+
+            <div class="foot-socs show-1650">
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/whatss.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/tgg.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/winst.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/wfb.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/wvk.svg"></a>
+            </div>
+
             <div class="footer-adress-it">
               <div class="footer-adress-tit">Проезд до склада:</div>
               <div class="footer-adress-cont">
-                г. Москва ул. Верейская,<br>
+                г. Москва ул. Верейская,<br />
                 д.41 стр. 13
               </div>
             </div>
@@ -842,677 +946,41 @@
               <div class="footer-adress-cont">Пн - Пт: 09:00–18:00</div>
             </div>
           </div>
-          <div class="footer-col-6">
+          <div class="footer-col-6 hide-1650">
             <a href="#" class="map-link">Карта сайта</a>
             <div class="foot-socs">
-              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/whatss.svg"></a><a href="#" class="foot-soc"><img src="img/tgg.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/whatss.svg" /></a>
+              <a href="#" class="foot-soc"><img src="img/tgg.svg" /></a>
+              <a href="#" class="foot-soc empty"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/winst.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/wfb.svg"></a>
+              <a href="#" class="foot-soc"><img alt="image" title="image" src="img/wvk.svg"></a>
             </div>
           </div>
         </div>
         <div class="footer-row-2">
-          <a href="#" class="footer-logo"><img alt="image" title="image" src="img/f-logo.svg" class="footer-logo-img"></a>
+          <a href="#" class="footer-logo"><img alt="image" title="image" src="img/f-logo.svg" class="footer-logo-img" /></a>
           <div class="footer-row-2-cont">
             <p class="rights">
               Все права защищены. Полное или частичное копирование материалов запрещено, при согласованном использовании материалов необходима ссылка на ресурс. Полное или частичное копирование произведений запрещено, согласование
               использования произведений производится с их авторами. Читать далее об авторских правах.
             </p>
-            <div class="footer-copy-row"><span class="copy">© 1999-2021, www.nem-ka.ru</span><a href="#" class="copy-link">Политика конфиденциальности</a><a href="#" class="copy-link">Соглашение на обработку персональных данных</a></div>
+            <div class="footer-copy-row"><span class="copy">© 1999-2021, www.nem-ka.ru</span><a href="#" class="copy-link">Политика конфиденциальности</a><a href="#" class="copy-link">Соглашение на обработку персональных данных</a>
+              <a href="#" class="footer-map-link show-1650">Карта сайта</a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
-  </div>
 
 
-
-                      <div class="dop-info">
-                        <div class="contain">
-                          <p>Сохранения</p>
-                          <p>Обновить страницу <br>
-                            кликнуть на любой блок верстки<br>
-                            Нажать alt + f3<br>
-                            Выбрать последнее сохраниение или другое<br>
-
-
-                          </p>
-                          <p>font-family: 'Verdana', sans-serif;</p>
-                          <p>background-size: cover;</p>
-                          <p>
-                            display: inline-flex; <br>
-                            width: calc(100% - 5px);
-                          </p>
-                          <p>        
-                          font-weight: 500;</p>
-                          <p>   
-                            background-color: #000; <br> 
-                            background-color: rgba(#fff, 0.77);  <br>    
-                            flex-grow: 1;
-                            flex: none;
-                          </p>   
-                          <p>
-                            border-bottom: 1px solid #ccc; - Нижний <br>
-                            border-top: 1px solid #ccc; - Верхний <br>
-                            border-left: 1px solid #ccc; - Левый <br>
-                            border-right: 1px solid #ccc; - Правый <br>
-                            border: none; - Нету <br>
-                          </p>
-
-                        </div>
-                      </div>
-
-                      <div class="form form-my">
-      <!--label>
-       Class Name <br>
-       <input type="text" class="class-name">
-     </label-->
-     <label>
-       CSS Styless <br>
-       <textarea class="styless"></textarea>
-       <!--input type="text" class="styless"-->
-     </label>
-     <label>
-       Add new Text + Enter <br>
-       <textarea class="text_val_add"></textarea>       
-     </label>
-     <!--span class="butt_add_text">OK</span-->
-
-     <br>
-     <label>
-      Placeholder <br>
-      <input type="text" class="placeholder">
-    </label>
-
-
-
-    <label>
-     <b>Width</b> <br>
-     <input type="text" class="width">
-   </label>
-   <label>
-     <b>Height</b> <br>
-     <input type="text" class="height">
-   </label>
-
-   <label>
-     <b>Calc</b> <br>
-     <input type="text" class="widthCalc" value="calc(100% / 3 - 10px)">
-   </label>
-
-
-
-
-   <label>
-     <b>Font-size</b>
-     <input type="text" class="fSize" placeholder="13px">
-   </label>
-   <label>
-     <b>Line-height</b>
-     <input type="text" class="line_height" placeholder="13px">
-   </label> 
-   <label>
-     <b>Font-weight</b>
-     <input type="text" class="fWeight" placeholder="600">
-   </label>
-
-
-   <label>
-     Color <br>
-     <input type="text" class="color">
-   </label>
-   <label>
-     Background-color <br>
-     <input type="text" class="bgColor">
-   </label>
-
-
-
-
-   <br>
-   <span class="group group-ma-pa group-margin">  
-    <span class="ma-pa-span ma-pa-hor">
-      <input type="text" class="margin_top" placeholder="">
-    </span><!--ma-pa-top-->
-    <span class="ma-pa-span ma-pa-vert">        
-      <input type="text" class="margin_left" placeholder="">
-      <input type="text" class="margin_right" placeholder="">
-    </span><!--ma-pa-span-->
-    <span class="ma-pa-span ma-pa-hor">    
-      <input type="text" class="margin_bottom" placeholder="">
-    </span>
-  </span>    
-  <span class="ma-span">
-   <input type="checkbox" class="ma"> 
- </span>
- <span class="group group-ma-pa group-padding">  
-  <span class="ma-pa-span ma-pa-hor">
-    <input type="text" class="padding_top" placeholder="">
-  </span><!--ma-pa-top-->
-  <span class="ma-pa-span ma-pa-vert">        
-    <input type="text" class="padding_left" placeholder="">
-    <input type="text" class="padding_right" placeholder="">
-  </span><!--ma-pa-span-->
-  <span class="ma-pa-span ma-pa-hor">    
-    <input type="text" class="padding_bottom" placeholder="">
-  </span>
-</span>
-<span class="group group-position">
- <span>Position</span>
-
- <label>
-   <input class="posre" type="radio" name="change_status_select" value="1"/>Relat
- </label>
- <label>
-   <input class="posa" type="radio" name="change_status_select" value="2"/>Absol
- </label>
- <label>
-   <input class="possta" type="radio" name="change_status_select" value="3"/>Static
- </label>
-</span> 
-<span class="group group-ma-pa group-position-size">  
-  <span class="ma-pa-span ma-pa-hor">
-    <input type="text" class="position_top" placeholder="">
-  </span><!--ma-pa-top-->
-  <span class="ma-pa-span ma-pa-vert">        
-    <input type="text" class="position_left" placeholder="">
-    <input type="text" class="position_right" placeholder="">
-  </span><!--ma-pa-span-->
-  <span class="ma-pa-span ma-pa-hor">    
-    <input type="text" class="position_bottom" placeholder="">
-  </span>
-</span>
-
-<span class="group group-text-align">
-  <span>Text-align:</span>
-  <label>
-    <input class="tal" type="radio" name="change_status_select12" value="1"/>Left
-  </label>
-  <label>
-   <input class="tac" type="radio" name="change_status_select12" value="2"/>Centr
- </label>     
- <label for="">
-   <input class="tar" type="radio" name="change_status_select12" value="2"/>Right
- </label>     
-</span>
-
-<span class="bordur">
-  <label>
-    Border-width
-    <input type="text" class="bordwidth">
-  </label>
-  <label>
-    Border-color
-    <input type="text" class="bordcol">
-  </label>  
-</span>  
-<span class="bordside tools tools2">
-  <label>
-    <input class="bordaround" type="radio" name="change_status_select" value="1"/>
-    <span>A</span>
-  </label>  
-  <label>
-    <input class="bordleft" type="radio" name="change_status_select" value="2"/>
-    <span ><svg class="rot-90" class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_start"></use> </svg></span>
-  </label>
-  <label>
-    <input class="bordtop" type="radio" name="change_status_select" value="3"/>
-    <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_start"></use> </svg></span>
-  </label>
-  <label>
-    <input class="bordbot" type="radio" name="change_status_select" value="4"/>
-    <span ><svg class="rot180" class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_start"></use> </svg></span>
-  </label>
-  <label>
-    <input class="bordright" type="radio" name="change_status_select" value="5"/>
-    <span ><svg class="rot90" class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_start"></use> </svg></span>
-  </label>
-</span>
-<label>
-  <input type="checkbox" class="bornone"> 
-  <span style="display: inline-block; padding-top: 5px; padding-left: 5px; font-style: italic;">Border: none</span>
-</label>
-
-<br>
-<span class="group group-overflow">
-  <span>Overflow</span>
-  <label>
-   <input class="overflow1" type="radio" name="change_status_select" value="1"/>Hidden
- </label>
- <label>
-   <input class="overflow2" type="radio" name="change_status_select" value="2"/>Visible
- </label>     
-</span>          
-
-
-
-<label>
- Z-index <br>
- <input type="text" class="z_index" placeholder="">
-</label>
-
-<label>
- Opacity <br>
- <input type="text" class="opacity" placeholder="">
-</label>
-
-<span class="group group-bgpos">
- <span class="group-title"><b>BG-POS</b></span>
- <label>
-   <input class="ltop" type="radio" name="change_status_select" value="1">
-   <span class="bgpos__butt">
-    <span class="bgpos__butt-sq bgpos__butt-sq--lt"></span>
-  </span><!--bgpos__butt-->
-</label>
-<label>
- <input class="topce" type="radio" name="change_status_select" value="2">
- <span class="bgpos__butt">
-  <span class="bgpos__butt-sq bgpos__butt-sq--ct"></span>
-</span><!--bgpos__butt-->
-</label>
-<label>
- <input class="ritop" type="radio" name="change_status_select" value="3">
- <span class="bgpos__butt">
-   <span class="bgpos__butt-sq bgpos__butt-sq--rt"></span>
- </span><!--bgpos__butt-->
-</label>
-<label>
- <input class="ricentr" type="radio" name="change_status_select" value="4">
- <span class="bgpos__butt">
-   <span class="bgpos__butt-sq bgpos__butt-sq--rc"></span>
- </span><!--bgpos__butt-->
-</label>
-<label>
- <input class="ribot" type="radio" name="change_status_select" value="5">
- <span class="bgpos__butt">
-   <span class="bgpos__butt-sq bgpos__butt-sq--rb"></span>
- </span><!--bgpos__butt-->
-</label>
-<label>
- <input class="botcentr" type="radio" name="change_status_select" value="6">
- <span class="bgpos__butt">
-   <span class="bgpos__butt-sq bgpos__butt-sq--bc"></span>
- </span><!--bgpos__butt-->
-</label>
-<label>
- <input class="lebot" type="radio" name="change_status_select" value="7">
- <span class="bgpos__butt">
-   <span class="bgpos__butt-sq bgpos__butt-sq--lb"></span>
- </span><!--bgpos__butt-->
-</label>
-<label>
- <input class="lecentr" type="radio" name="change_status_select" value="8">
- <span class="bgpos__butt">
-   <span class="bgpos__butt-sq bgpos__butt-sq--lc"></span>
- </span><!--bgpos__butt-->
-</label>
-</span>
-
-<label>
- Min-height <br>
- <input type="text" class="minheight">
-</label>
-
-<label>
-  Max-width px % <br>
-  <input type="text" class="maxwidth">
-</label>
-
-<span class="group group-text-align">
-  <span>Object-fit:</span>
-  <label>
-    <input class="objcov" type="radio" name="change_status_select12" value="1"/>Cover
-  </label>  
-</span>
-
-
-<span class="group group-float">
- <span>Float</span>
- <label>
-   <input class="float1" type="radio" name="change_status_select" value="1"/>Left
- </label>
- <label>
-   <input class="float3" type="radio" name="change_status_select" value="3"/>None
- </label>
- <label>
-   <input class="float2" type="radio" name="change_status_select" value="2"/>Right
- </label>     
-</span>
-
-
-<label>
-  Value <br>
-  <input type="text" class="submit_value">
-</label>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="w-row"><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div></div><!--w-row-->
-
-
-<div class="left-tools">
-  <span class="copy-add">
-    <span class="copy">Copy</span>
-    <span class="parent">Parent</span>
-    <span class="add">Add</span>  
-    <span class="rw">rw</span>  
-  </span><!--copy-add-->
-  <span class="colss">
-    <span class="coll coll-1" title="alt + 1">1</span>
-    <span class="coll coll-2">2</span>
-    <span class="coll coll-3">3</span>
-    <span class="coll coll-4">4</span>
-    <span class="coll coll-6">6</span>  
-    <input type="text" class="norm" value="<br>">
-    <span class="coll coll-8" title="alt + 3">-w</span>
-    <span class="coll coll-7" title="alt + 2"><b>contain</b></span>
-    <span class="coll coll-b"><b>b</b></span>
-    <span class="coll coll-p"><b>p</b></span>
-    <span class="coll coll-w"><b>wrap</b></span> 
-    <span class="coll coll-aw"><b>a wrap</b></span> 
-    <!--input type="text" class="tag_name" placeholder="Имя тэга"-->
-  </span><!--colss-->
-  <div class="form form-my2">    
-    <div class="coluu-w">
-    <span class="coluu" id="coluu_2">
-      <span></span>
-      <span></span>
-    </span>
-    <span class="coluu" id="coluu_3">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-    <span class="coluu" id="coluu_4">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-    <span class="coluu" id="coluu_5">
-      5
-    </span>
-    <span class="coluu" id="coluu_6">
-      6
-    </span>
-    <span class="coluu" id="coluu_w">
-      W
-    </span>
-  </div>
-    <!--span class="classs">none</span><br-->
-    <span class="classs2">none</span>
-  <!--label>
-   Class Name <br>
-   <input type="text" class="class-name2">
- </label>
- <label>
-   Text <br>
-   <textarea class="text_val2"></textarea>  
- </label>
- <label>
-   CSS Styless <br>
-   <textarea class="styless2"></textarea>   
- </label> 
- <span class="butt2">OK</span-->
- 
-
-
- <span class="displ tools tools2">
-  <label>
-    <input class="dflex" type="radio" name="change_status_select" value="5"/>    
-    <span class="dflex-iconnnn">F</span>
-  </label>
-  <label>
-    <input class="iflex" type="radio" name="change_status_select" value="6"/>
-    <span>IF</span>
-  </label>
-  <label>    
-    <input class="dblock" type="radio" name="change_status_select" value="1"/>
-    <span class="grayactttt block-icon"></span>
-  </label>  
-  <label>
-    <input class="dinlineblock" type="radio" name="change_status_select" value="3"/>
-    <span>IB</span>
-  </label>
-  <label>    
-    <input class="dinline" type="radio" name="change_status_select" value="2"/>
-    <span>I</span>
-  </label>
-
-  <label class="ml10">
-    <input class="grow_none" type="radio" name="grow_1" value="1"/>
-    <span class="w50s">N</span>
-  </label>
-  <label>
-    <input class="grow1" type="radio" name="grow_1" value="1"/>
-    <span class="w50s">1</span>
-  </label>
-  <!--label>
-    <span>N</span>
-    <input class="dnone" type="radio" name="change_status_select" value="4"/>
-  </label--> 
-</span>
-
-<span class="group group-alignitems mtaa tools tools2">  
-  <label>
-    <input class="ai1" type="radio" name="change_status_select" value="1">
-    <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_start"></use> </svg></span>
-  </label>
-  <label>
-   <input class="ai2" type="radio" name="change_status_select" value="2">
-   <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_center"></use> </svg></span>
- </label>
- <label>
-   <input class="ai3" type="radio" name="change_status_select" value="3">
-   <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#align_content_end"></use> </svg></span>
- </label>
-
-
-
-
-
- <label class="ml10">
-  <input class="flwrap" type="radio" name="change_status_select12" value="1"/>
-  <span>W</span>
-</label> 
-<label>
-  <input class="flwrap2" type="radio" name="change_status_select12" value="2"/>
-  <span>NO</span>
-</label>   
-
-
-
-
-
-
-</span>
-
-<span class="group group-alignitems mtaa tools tools2">  
-  <label>
-    <input class="jc1" type="radio" name="change_status_select" value="1">
-    <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#justify_start"></use> </svg></span>
-  </label>
-  <label>
-   <input class="jc4" type="radio" name="change_status_select" value="2">
-   <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#justify_center"></use> </svg></span>
- </label>
- <label>
-   <input class="jc3" type="radio" name="change_status_select" value="3">
-   <span><svg class="flexbe-icon size-16 " width="16" height="16"> <use xlink:href="img/editor_settings.svg?1626288100933#justify_end"></use> </svg></span>
- </label>
- <label>
-   <input class="jc2" type="radio" name="change_status_select" value="2">
-   <span class="sbetw"></span>
- </label>
- <label class="ml10">
-  <input class="fd_col" type="radio" name="fd_column" value="col"/>
-  <span>col</span>
-</label>  
-<label>
-  <input class="fd_row" type="radio" name="fd_column" value="row"/>
-  <span>row</span>
-</label> 
-</span>
-
-
-<label>
-  <span class="img">IMG</span>    
-  <input type="file" class="type_file">    
-</label>
-<span class="butospan obb_img" title="alt + O">O</span>
-<label>
-  <span class="bg-img">BG-IMG</span>
-  <input type="file" class="type_file2">
-</label>
-<label for="">
-  <span class="radius"></span>
-</label>
-<input type="text" class="radius_input">
-<label for="">
-  <span class="before">Before</span>
-</label>
-<span class="butospan link" title="alt + L">a</span>
-<span class="butospan span" title="alt + S">span</span>
-<label for="">
-  <span class="butospan but_form but_form_1">Form</span>
-  <span class="butospan but_form but_form_2">Form 2</span>
-  <span class="butospan but_text">Text</span>
-  <span class="butospan but_textarea">Area</span>    
-  <span class="butospan but_subm">Submit</span>    
-</label>
-
-
-
-<label for="">
-  <span class="butospan but_ul">ul</span>    
-  <span class="butospan but_li">li</span>
-  <span class="butospan but_dot">dot</span>
-</label>  
-  <!--label>
-   <input type="checkbox" class="mha"> 
-   <span style="display: inline-block; padding-top: 5px; padding-left: 5px;">Min-height: auto</span>
- </label-->
- <!--label>
-   <input type="checkbox" class="fsi"> 
-   <span style="display: inline-block; padding-top: 5px; padding-left: 5px; font-style: italic;">Font-style: italic</span>
- </label-->
-
-
-
-
-
-
-
-
-
- <span class="butospan stroove">st id rem</span>
- <span class="butospan copy-html">copy htm</span>
-</div>
-
-
-
-
-
-<div class="left-const">
-  <div class="const-elem-action" id="hedr"><img src="img-const/header.jpg" alt=""></div>
-  
-  <div class="group-50">
-    <div class="const-elem-action const-elem-action_50" id="contct"><img src="img-const/contact.png" alt=""></div>
-    <div class="const-elem-action const-elem-action_50" id="socs"><img src="img-const/socs.png" alt=""></div>
-  </div><!--g-50-->
-
-  <div class="group-50">
-    <div class="const-elem-action const-elem-action_50" id="btn"><img src="img-const/btn.png" alt=""></div>
-    <div class="const-elem-action const-elem-action_50" id="btno"><img src="img-const/btn-o.png" alt=""></div>
-  </div><!--g-50-->
-
-<div class="group-50">
-  <div class="const-elem-action const-elem-action_v const-elem-action_50" id="it1"><img src="img-const/111.jpg" alt=""></div>
-  <div class="const-elem-action const-elem-action_v const-elem-action_50" id="it2"><img src="img-const/222.jpg" alt=""></div>  
-  </div>
-
-  <div class="const-elem-action const-elem-action_v" id="it3"><img src="img-const/333.jpg" alt=""></div>
-
-<div class="const-elem-action const-elem-action_v" id="bannr"><img src="img-const/bannr.jpg" alt=""></div>
-
-
-<div class="group-50">
-  <div class="const-elem-action const-elem-action_v const-elem-action_50" id="tabss"><img src="img-const/tabss.jpg" alt=""></div>
-  <div class="const-elem-action const-elem-action_v const-elem-action_50" id="barndss"><img src="img-const/barndss.jpg" alt=""></div>
-  </div>
-
-<div class="group-50">
-  <div class="const-elem-action const-elem-action_v const-elem-action_50" id="elem1"><img src="img-const/it1.jpg" alt=""></div>
-  <div class="const-elem-action const-elem-action_v const-elem-action_50" id="elem2"><img src="img-const/it2.jpg" alt=""></div>
-  </div>
- 
- <div class="group-50">
-  <div class="const-elem-action const-elem-action_v2 const-elem-action_50" id="card"><img src="img-const/card.jpg" alt=""></div>
-  <div class="const-elem-action const-elem-action_v2 const-elem-action_50" id="vform"><img src="img-const/vform.jpg" alt=""></div>
-  </div> 
-
-  <div class="const-elem-action const-elem-action_v"  id="hform"><img src="img-const/hform.jpg" alt=""></div>
-  <div class="const-elem-action" id="taggss"><img src="img-const/taggss.jpg" alt=""></div>
-  <div class="const-elem-action const-elem-action_v"  id="neww"><img src="img-const/neww.jpg" alt=""></div>
-  
-  <div class="const-elem-action const-elem-action_v"  id="bredd"><img src="img-const/bredd.jpg" alt=""></div>
-  <div class="const-elem-action"  id="paginn"><img src="img-const/paginn.jpg" alt=""></div>
-
-
-</div><!--left-const-->
-
-
-</div><!--left-tools-->
-
-
-
-
-
-
-
-
-<script src="js/jquery-3.4.1.min.js"></script>  
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.textchange.min.js"></script>
-<!--script src="js/common1.js"></script-->
-<!--Для адаптации-->
-<script src="js/common-resp.js"></script>
-<div class="eye"></div>
-<div class="eye2"></div>
-<a href="#" class="save">save</a>
-<div class="top_pan">
-  <span class="colla coll-h1">h1</span>
-  <span class="colla coll-h2">h2</span>
-  <span class="colla coll-h3">h3</span>
-  <span class="colla coll-h4">h4</span>
-  <span class="colla coll-h5">h5</span>
-  <span class="colla coll-h6">LBL</span>
-  <span class="colla coll-bq">blockquote</span>
-
-  <span class="colla colla-i">  
-   <input type="text" class="class-name"> 
- </span>
-
-
- <span class="remove">X</span>
- <span class="flora">
-  <span class="colla coll_table">Таблица</span>
-  <span class="colla coll_thead">Заголовок</span>
-  <span class="colla coll_tbody">Тело</span>
-  <span class="colla coll_tr">Ряд</span>
-  <span class="colla coll_td">Ячейка</span>
-</span>
-<textarea class="text_val_add_2"></textarea>
-<textarea class="styless_2"></textarea>
-</div><!--top_pan-->
+  </div><!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>      
+  <script src="js/lazyload.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery-ui-timepicker-addon.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>

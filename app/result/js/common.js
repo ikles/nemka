@@ -19,26 +19,24 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-  //$('.wrapper').prepend('<span class="eye-3"></span>');
-
-
-/************************************/
-
-$('.wrapper').prepend('<span class="eye-3"></span>');
-let pg = parseInt(document.location.pathname.match(/\d+/))
-$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
-$('body:not(.active)').css('background-image', "unset");
-
-$('.eye-3').click(function (e) {
-  e.preventDefault();  
-  $('body').toggleClass('active');
-  let pg = parseInt(document.location.pathname.match(/\d+/));
-  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
-  $('body:not(.active)').css('background-image', "unset");
-
+$("#video__play").click(function(e){
+  e.preventDefault();
+  var dataYoutube = $(this).parents('.js-video').attr('data-youtube');
+  $(this).parents('.js-video').html('<iframe width=100% height=100% src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allowfullscreen></iframe>')
 });
 
-/************************************/
+$('.more-revs').click(function (e) {
+  e.preventDefault();
+$(this).hide();  
+  $('.more-revs-items-block').slideDown();
+});
+
+
+
+
+
+
+
 
  $('div.lazy').lazy();
 
@@ -58,7 +56,7 @@ $('.eye-3').click(function (e) {
     setTimeout(function () {
       $('.card-slide-image').attr('src', href);
     }, 100);
-    $(this).addClass('active')
+    $(this).addClass('active');
   });
 
 
@@ -81,8 +79,7 @@ $('.accordion-header').toggleClass('inactive-header');
       $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
       $(this).toggleClass('active-header').toggleClass('inactive-header');
       $(this).next().slideToggle().toggleClass('open-content');
-    }
-    
+    }    
     else {
       $(this).toggleClass('active-header').toggleClass('inactive-header');
       $(this).next().slideToggle().toggleClass('open-content');
@@ -92,7 +89,9 @@ $('.accordion-header').toggleClass('inactive-header');
 
   $('.tabs-control-1 .tabs_control_link').click(function (e) {
     e.preventDefault();
-
+let textt = $(this).text();
+$('.tabs-active-pda').html(textt);
+$('.tabs-control').addClass('slideUp').removeClass('slideDown');
     var item = $(this).closest('.tabs-control-1 .tabs_control_item'),
     contentItem = $('.tabs_content-1 .tabs_content_item'),
     itemPosition = item.index();
@@ -106,70 +105,9 @@ $('.accordion-header').toggleClass('inactive-header');
   });
 
 
-  $('.tabs-control-2 .tabs_control_link').click(function (e) {
-    e.preventDefault();
-
-    var item = $(this).closest('.tabs-control-2 .tabs_control_item'),
-    contentItem = $('.tabs_content-2 .tabs_content_item'),
-    itemPosition = item.index();
-
-    contentItem.eq(itemPosition)
-    .add(item)
-    .addClass('active')
-    .siblings()
-    .removeClass('active');
-
-  });
-
-/*  $("#calc-distance").slider({
-    range: "min",
-    step: 50000,
-    value: 750000,
-    min: 0,
-    max: 10000000,
-    slide: function( event, ui ) {
-      $( "#amount-distance" ).val( ui.value.toLocaleString() );
-    }
-  });
-  $( "#amount-distance" ).val( $( "#calc-distance" ).slider( "value" ).toLocaleString() );
-
-  $("#calc-distance-2").slider({
-    range: "min",
-    step: 50000,
-    value: 0,
-    min: 0,
-    max: 10000000,
-    slide: function( event, ui ) {
-      $( "#amount-distance-2" ).val( ui.value.toLocaleString() );
-    }
-  });
-  $( "#amount-distance-2" ).val( $( "#calc-distance-2" ).slider( "value" ).toLocaleString() );*/
-
-
-
-/*  $('.carous-items').slick({  
-
-
-   dots: true,
-   infinite: true,
-   speed: 300,
-   slidesToShow: 1,
-   centerMode: true,
-   variableWidth: true
- });*/
-
-/*
-  infinite: true,
-  speed: 300,
-  slidesToShow: 10,
-  slidesToScroll: 1,
-  centerMode: true,
-  autoplay: false,
-  variableWidth: true,
-  autoplaySpeed: 4000,
-  cssEase: 'ease-out',
-  dots: true
-  */
+$('.tabs-active-pda').click(function () {
+  $('.tabs-control').removeClass('slideUp').addClass('slideDown');
+});
 
 
 
